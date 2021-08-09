@@ -1,0 +1,908 @@
+/* Reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Tipografia*/
+@font-face {
+    font-family: 'fuente1';
+    src: url(../fuentes/AmericanCaptain.otf);
+}
+@font-face {
+    font-family: 'fuente2';
+    src: url(../fuentes/Gotham-Light.otf);
+}
+@font-face {
+    font-family: 'fuente3';
+    src: url(../fuentes/649-font.otf);
+}
+
+body {
+    background-color:#efefef;
+}
+
+.video__contenedor {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    justify-content: center;
+}
+
+.video__contenedor video {
+    width: 70%;
+    margin-top: 3%;
+}
+
+header {
+    background-color: black;
+    position: sticky; top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;  
+}
+
+.header__logo  {
+    margin-top: 10px; 
+    margin-left: 3%;  
+}
+
+.header__boton {
+    width: 8%;
+    height: 30%;
+    background-color: black;
+    border: 2px solid #efefef;
+    border-radius: 4px; 
+    margin-right: 3%;  
+}
+
+.header__boton a {
+    font-family: 'fuente1'; 
+    font-size: 20px;
+    color: #efefef;
+    text-decoration: none; 
+}
+
+.header__boton a:hover {
+    color: #d72136;
+}
+
+
+/*ESTILOS BARRA DE MENU*/
+/*  /nav {
+    margin-top: 22.663px;  
+    margin-bottom: 22.663px;
+    margin-left: 24%;
+}*/
+
+.nav__menu {
+    
+    display: inline-block;
+    padding: 20px;
+}
+.nav__menu a {
+    font-family: 'fuente1'; 
+    font-size: 30px;
+    color: #d72136;
+    text-decoration: none;  
+}
+.nav__menu a:hover {
+    color:#efefef;
+}
+/* estilos submenu 
+.nav__submenu  {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: black;
+    padding-left: 20px;
+    padding: 10px 20px;
+}
+
+ul li:hover .nav__submenu {
+    display: block;
+    text-decoration: none;
+}
+
+.nav__submenu a {
+    font-size: 28px;
+}*/
+/* ------------------------------------------------------- */
+
+/*ESTILOS FOOTER*/
+footer {
+    width: 70%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__infoContact {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 15px;
+    font-family:'fuente2' ;
+    line-height: 1.6;
+    font-weight: bold;
+    color:black;
+    padding: 20px;
+}
+
+.footer__redes {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 15px;
+    font-family:'fuente2';
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__redes_logos {
+    margin-top: 3%;
+}
+
+.footer__redes img {
+    width: 12%;
+    padding: 5px;
+}
+
+.footer__copyright {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 15px;
+    font-family:'fuente2' ;
+    font-weight: bold;
+    color: black ;
+    line-height: 1.6;
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+}
+/* ------------------------------------------------------- */
+
+/*PAGINA INDEX*/
+/*reseña*/
+
+.reseña {
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+.reseña__contenedor {
+    width: 70%;
+    display: flex;
+    justify-content: center;  
+} 
+
+.reseña__contenedor_info {
+    width: 40%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.reseña__contenedor_info h1 {
+    font-family: 'fuente3';
+    color:whitesmoke;
+    font-size: 35px;
+    text-align: center;
+}
+
+.reseña__contenedor_info h3 {
+    font-family: 'fuente3';
+    color: #d72136;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.6;  
+}
+
+.reseña__contenedor_info p {
+    font-family:'fuente2';
+    color: whitesmoke;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.reseña__contenedor_imagen {
+    width:  40%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reseña img {
+   width: 80%;
+}
+
+/*entrenamiento*/
+.entrenamiento {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;  
+}
+
+.entrenamiento__titulo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.entrenamiento__titulo img {
+    width: 40%;   
+}
+
+.entrenamiento p {
+    font-family: 'fuente2';
+    color: black;
+    font-size: 14px;
+    
+    line-height: 1.6;
+    font-weight: bold;
+    padding: 3%;
+}
+
+.entrenamiento h2 {
+    font-family: 'fuente3';
+    color: #d72136;
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+
+.entrenamiento h3 {
+    font-family: 'fuente3';
+    color: #d72136;
+    font-size: 25px;
+    text-align: center;
+}
+
+.entrenamiento h4 {
+    font-family: 'fuente2';
+    color:black;
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+.entrenamiento__contenedor {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.entrenamiento__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+}
+
+.entrenamiento__info img {
+    width: 80% ; 
+}
+
+
+/*  
+.inicio_disciplinas button {
+    background-color: #d72136;
+    border: none;
+    border-radius: 4px;    
+}
+.inicio_disciplinas a {
+    color:black;
+    font-size: 20px;
+    font-family: 'fuente2';
+    text-decoration: none;
+}
+*/
+
+/*promociones*/
+.promociones {
+    background-color: black;  
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+.promociones__titulo {
+    width: 70%;
+    height: 40px;
+    line-height: 40px; 
+    overflow: hidden;
+    margin: auto;
+}
+
+.promociones__titulo ul  {
+    font-family: 'fuente3';
+    color: #d72136;
+    font-size: 30px;
+    list-style: none;
+    text-align: center;
+    animation: cambiar 7s infinite;     
+}
+
+@keyframes cambiar {
+    0%{margin-top: 0;}
+    20%{margin-top: 0;} 
+    60%{margin-top: -40px;}
+    80%{margin-top: -40px;}
+    100%{margin-top: 0;}
+}
+
+.promociones__contenedor {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.promociones__info {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:  
+    "titulo titulo descuento"
+    " img img img" 
+    " . . boton";
+    margin-top: 3%;
+    width: 30%;
+    border: 1px solid #efefef;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.info_titulo {
+    grid-area: titulo;
+}
+
+.info_imagen {
+    grid-area: img;   
+}
+
+.info_desc {
+    grid-area: descuento;
+}
+
+.info_boton {
+    grid-area: boton;
+}
+
+.promociones h3 {
+    font-family: 'fuente3';
+    color: #d72136;
+    font-size: 25px;
+    justify-self: start;
+    align-self: center; 
+}
+
+.promociones p {
+    font-family: 'fuente2';
+    color: #efefef;
+    font-size: 20px;
+    justify-self: end;
+    align-self: center;
+}
+
+.promociones button {
+    width: 80%;
+    height: 60%;
+    background-color: black;
+    border: 2px solid #d72136;
+    border-radius: 4px;
+    justify-self: end;
+    align-self: center; 
+}
+
+.promociones a {
+    color: #d72136;
+    font-size: 15px;
+    font-family: 'fuente2';
+    text-decoration: none;
+}
+
+.promociones a:hover {
+    color: #efefef;
+}
+
+.promociones img  {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    justify-self: end;
+    align-self: center;
+}
+
+.promocion__boton {
+    display: flex;
+    width: 100%;
+    height: 100px; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.promocion__boton button {
+    width: 8%;
+    height: 30%;
+    background-color: black;
+    border: 2px solid #d72136;
+    border-radius: 4px; 
+    margin-right: 16%; 
+}
+
+.promocion__boton a {
+    color: #d72136;
+    font-size: 20px;
+    font-family: 'fuente2';
+    text-decoration: none;
+}
+/* ------------------------------------------------------- */
+
+/*PAGINA DISCIPLINAS  */
+
+.disciplinas {
+    width: 100%;
+    background-color: black;
+    padding-bottom: 10%;
+}
+
+.disciplinas__imagen {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 495px;
+    align-items: center; 
+}
+
+.disciplinas__imagen img {
+    width: 70%;
+    height: 400px;
+}
+
+.disciplinas__coach {
+    width: 70%;
+    height: 30%;
+    display: flex;
+    margin: auto;
+    padding-bottom: 1%;
+    border-bottom: 1px solid gray;
+}
+
+.disciplinas__coach_imagen {
+    width: 10%;
+}
+
+.disciplinas__coach img {
+    width: 75%;
+}
+
+.disciplinas__coach_info {
+    width: 10%;
+    padding-right: 2%;
+    margin-left: -1%;
+    border-right: 1px solid gray;
+}
+
+.disciplinas__coach_info button {
+    width: 70%;
+    background-color: black;
+    border: 1px solid #d72136;
+    border-radius: 4px; 
+}
+
+.disciplinas__coach_info a {
+    color: #d72136;
+    font-size: 15px;
+    font-family: 'fuente2';
+    text-decoration: none;
+    padding: 2% ;
+}
+
+.disciplinas h1 {
+    font-family: 'fuente1';
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.disciplinas__info {
+    width: 70%;
+    margin: auto;
+    padding-top: 1%;   
+    padding-bottom: 1%;
+}
+
+.disciplinas p {
+    font-family: 'fuente2';
+    color: whitesmoke;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.6;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+  
+.disciplinas h2 {
+    font-family: 'fuente3';
+    color:#d72136;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.disciplinas h4 {
+    font-family: 'fuente2';
+    color:#d72136;
+    font-size: 20px;
+}
+
+.disciplinas__galeria {
+    width: 70%;
+    margin: auto; 
+}
+
+.disciplinas__galeria_imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    justify-content: center;
+}
+
+.disciplinas__galeria_imagenes img {
+    width: 30%;
+    padding: 1%;
+    transition: all 3s;
+   
+}
+
+.disciplinas__galeria_imagenes img:hover {
+    transform: scale(1.5);
+    z-index: 3;
+}
+
+.disciplinas__galeria_boton {
+    text-align: right;
+    padding-bottom: 4%;
+}
+
+.disciplinas__galeria_boton button {
+    width: 17%;
+    background-color: black;
+    border: 2px solid #d72136;
+    border-radius: 4px; 
+}
+
+.disciplinas__galeria_boton a {
+    color: #d72136;
+    font-size: 20px;
+    font-family: 'fuente2';
+    text-decoration: none;
+}
+.disciplinas a:hover {
+    color: #efefef;
+    
+}
+
+/* PAGINA STAFF*/
+
+.staffEncabezado {
+    width: 100%;
+    background-color: black;
+    height: 495px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.stattEncabezado__slider {
+    width: 70%;
+    height: 400px;
+    animation: banner 6s infinite linear alternate;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+@keyframes banner {
+    0%,45% {
+        background-image: url(../imagenes/staff.png);}
+    50%,100% {
+        background-image: url(../imagenes/portada-03.png);}      
+} 
+
+.staff h2 {
+    font-family: 'fuente3';
+    color:#d72136;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%; 
+}
+
+.staff__profesores {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;  
+    margin-bottom: 5%;
+}
+
+.staff__profesoresInfo {
+    background-color: black;
+    width: 22%;
+    border-radius: 8px;  
+    box-shadow: 0 2px 2px darkgray; 
+    transition: all 0.25s;
+}
+
+.staff__profesoresInfo:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px darkgray ;
+}
+
+.staff__profesoresInfo h3 {
+    font-family: 'fuente2';
+    color: #d72136;
+    font-size: 20px;
+    padding-left: 8%;
+    line-height: 1.6;
+}
+
+.staff__profesoresInfo h4 {
+    font-family: 'fuente2';
+    color: #d72136;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 8%;
+}
+
+.staff__profesoresInfo ul {
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 5%;
+} 
+.staff__profesoresInfo li {
+    font-family: 'fuente2';
+    color: #efefef;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.staff__profesoresInfo_imagen {
+    text-align: center;
+}
+
+.staff__profesoresInfo_imagen img {
+    width: 90%;
+    margin-top: 5%;
+}
+
+.staff {
+    padding-bottom: 10%;
+}
+
+/* PAGINA MEMBRESIAS*/
+.titulo_membresias {
+    width: 70%;
+    margin: auto;
+    text-align: center;    
+}
+
+.titulo_membresias h2 {
+    font-family: 'fuente3';
+    color:#d72136;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.membresias {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.membresias__contenedor {
+    width: 20%;
+    background-image: linear-gradient(to bottom, grey, black);
+    padding: 2%;
+    margin-bottom: 2%;
+    border-radius: 8px;
+}
+
+.membresias__contenedor_imagen img {
+    width: 100%;
+}
+
+.membresias h2 {
+    font-family: 'fuente3';
+    color:#d72136;
+    font-size: 25px;
+    padding-bottom: 1%;   
+}
+
+.membresias h3 {
+    font-family: 'fuente2';
+    color:#d72136;
+    font-size: 20px;
+}
+
+.membresias li {
+    font-family: 'fuente2';
+    color: #efefef;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.membresias p {
+    font-family: 'fuente2';
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.membresiasPromociones {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10%;
+}
+
+.membresiasPromociones__mes{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.membresiasPromociones__mes img {
+    width: 30%;
+    padding: 3% 1%; 
+}
+
+
+/*PAGINA CONTACTO*/
+/*Formulario*/
+.contacto {
+    width: 70%;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    margin-top: 2.5%;
+    margin-bottom: 10%;
+}
+
+.contacto__formulario {
+    width: 50%; 
+}
+
+.contacto__formulario h2 {
+    font-family: 'fuente2'; 
+    color: #efefef;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    padding-top: 8%;
+    line-height: 1.6;
+}
+
+.contacto__formulario form {
+    width: 80%;
+    margin: auto;   
+}
+
+fieldset   {
+    width: 90%;
+    padding: 4%;
+    margin-top: 2%;
+}
+
+fieldset legend {
+    color:#d72136;
+    font-family: 'fuente2';
+    font-size: 20px;
+    padding-bottom: 2%;
+}
+fieldset label {
+    color:white;
+    font-family: 'fuente2';
+    font-size: 15px;
+}
+
+/*Información de contacto*/
+.contacto__contenedor {
+    width: 50%;
+    background-color: black;
+}
+
+.contacto__contenedor_info {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contacto__contenedor_info h3 {
+    font-family: 'fuente2'; 
+    color: #d72136;
+    font-size: 25px;
+    line-height: 1.6;
+}
+.contacto__contenedor_info h4 {
+    font-family: 'fuente2'; 
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contacto__contenedor_info p {
+    font-family: 'fuente2'; 
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contacto__contenedor_info img {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+/* ------------------------------------------------ */
+
+
+/* PAGINAS AUN SIN ESTILOS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
