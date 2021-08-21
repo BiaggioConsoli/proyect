@@ -4,172 +4,200 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fight 2 Fit Training Center</title>
-        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link rel="icon" href="./imagenes/logof2f_blanco.png">
+        <link rel="stylesheet" href="./css/probando.css">
+        <link rel="stylesheet" href="./fonts/fonts.css">
+        <title>Fight 2 Fit</title>
     </head>
     <body>
         <header>
-            <div class="header__logo">
-                <img src="./imagenes/logof2f_blanco.png" alt="imagen no encontrada " title="logo Fight 2 Fit" width="150"> <!-- el width solo para reducir la imagen del logo y que se pueda apreciar al abrir la página-->
-            </div>
-            <nav>
-                <ul>
-                    <li class="nav__menu">
-                        <a href="./index.html">Inicio</a>
-                    </li>
-                    <li class="nav__menu">
-                        <a href="./paginas/disciplinas.html">Disciplinas</a>
-                        <!-- Submenu 
-                        <ul class="nav__submenu">
-                            <li>
-                                <a href="">MUAYTHAI</a>
-                            </li>
-                            <li>
-                                <a href="">JIU JITSU</a>
-                            </li>
-                            <li>
-                                <a href="">CAPOEIRA</a>
-                            </li>
-                            <li> 
-                                <a href="">COMBAT SAMBO</a>
-                            </li>
-                        </ul>-->
-                    </li>
-                    <li class="nav__menu">
-                        <a href="./paginas/staff.html">Staff</a>
-                    </li>
-                    <li class="nav__menu">
-                        <a href="./paginas/membresias.html"">Membresias</a>
-                    </li>
-                    <li class="nav__menu">
-                        <a href="./paginas/contacto.html"">Contacto</a>
-                    </li> 
-                 </ul> 
-             </nav>
-             <button class="header__boton">
-                 <a href="./paginas/contacto.html">Inscribete ya</a>
-            </button>
-        </header>    
+            <!--navbar-->
+            <nav class="navbar navbar-expand-md bg-black ">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <img src="./imagenes/logof2f_blanco.png" alt="" width="100">
+                    </a>
+                    <button class="navbar-toggler" 
+                        type="button" 
+                        data-toggle="collapse" 
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toogle navigation">
+                        <span class="icon-menu"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto barramenu_links" >
+                            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./paginas/disciplinas.html">Disciplinas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./paginas/staff.html">Staff</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./paginas/membresias.html">Membresias</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./paginas/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <main>
-            <div class="video__contenedor">
-                <video src="./videos/f2fhome.mp4" controls autoplay muted loop title="video coorporativo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></video>
+            <div class="ratio ratio-16x9">
+                <video src="./videos/f2fhome.mp4" controls autoplay muted loop title="video coorporativo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></video>
             </div>
             <section>
                 <!--reseña-->
-                <article class="reseña">
-                    <div class="reseña__contenedor">
-                        <div class="reseña__contenedor_imagen">
-                            <img src="./imagenes/valores.jpg" alt="imagen no encontrada" title="">
-                        </div>
-                        <div class="reseña__contenedor_info">
-                            <h1>FIGHT 2 FIT TRAINING CENTER</h1>
-                            <h3>TRAIN, FIGHT, WIN, REPEAT</h3>
-                            <p>Fight 2 Fit nace en el 2010 con la idea de difundir las artes marciales
-                            y deportes de contacto, a lo largo del tiempo venimos formando artistas marciales mediante una enseñanza personalizada y un entrenamiento de alto rendimiento, fortaleciendo en ellos valores como la disciplina, el respeto, la hermandad y la constancia, pilares en nuestra academia.
+                <article class="container-fluid bg-black reseña">
+                    <div class="row justify-content-center reseña__contenedor">
+                        <div class="col-xs-12 col-md-9 reseña__contenedor_info">
+                            <h1>TRAIN, FIGHT, WIN, REPEAT</h1>
+                            <p> <span class="icon-quotes-left"></span> Fight 2 Fit nace en el 2010 con la idea de difundir las artes marciales
+                            y deportes de contacto, a lo largo del tiempo venimos formando artistas marciales mediante una enseñanza personalizada y un entrenamiento de alto rendimiento, fortaleciendo en ellos valores como la disciplina, el respeto, la hermandad y la constancia, pilares en nuestra academia. <span class="icon-quotes-right"></span>
                             </p>
+                        </div>
+                </article>
+                <!--entrenamiento-->
+                <article class="container-fluid entrenamiento">
+                    <div class="container">
+                        <h2>Elige tu estilo de entrenamiento</h2>
+                    </div>
+                    <div class="row justify-content-center entrenamiento__collage">
+                        <img src="imagenes/collage.png"  alt="">
+                    </div>
+                    <div class="container"> 
+                        <h2>En Fight 2 Fit contamos con diferentes disciplinas, lleva tu entrenamiento al límite</h2>
+                    </div> 
+                    <div class="row justify-content-center">
+                        <div class=" entrenamiento__info ">
+                            <div class="card">
+                                <img src="imagenes/silueta_muay.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Muaythai</h5>
+                                    <p class="card-text">Conocido como el arte de las ocho extremidades o boxeo tailandés, el Muaythai usa golpes de manos, tibias, codos y rodillas.</p>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entrenamiento__info">
+                            <div class="card">
+                                <img src="imagenes/silueta_jiujitsu.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jiu Jitsu</h5>
+                                    <p class="card-text">Se centra principalmente en la lucha cuerpo a cuerpo en el suelo, usando para ello luxaciones, estrangulaciones, inmovilizaciones y derribos.</p>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" entrenamiento__info">
+                            <div class="card">
+                                <img src="imagenes/silueta_capoeira.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Capoeira</h5>
+                                    <p class="card-text">Es conocido por sus rápidos y complejos movimientos, que utilizan los brazos y las piernas para ejecutar maniobras de gran agilidad en forma de patadas, fintas y derribos.</p>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" entrenamiento__info">
+                            <div class="card">
+                                <img src="imagenes/silueta_cs.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Combat Sambo</h5>
+                                    <p class="card-text">Engloba técnicas de todas las distancias de combate; golpeo con puños, codos, rodillas, piernas y cuerpo a cuerpo, derribos, proyecciones, estrangulaciones, luxaciones y todo tipo de sumisiones.</p>  
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <!--entrenamiento-->
-                <article class="entrenamiento">
-                    <div class="entrenamiento__titulo">
-                        <h2>Elige tu estilo de entranamiento</h2>
-                        <img src="imagenes/collage.png" alt="">
-                        <h4>En Fight 2 Fit contamos con diferentes disciplinas, lleva tu entrenamiento al límite</h4>
-                     </div>
-                    <div class="entrenamiento__contenedor">
-                        <div class="entrenamiento__info">
-                            <img src="imagenes/silueta_muay.png" alt="">
-                            <h3>Muaythai</h3> 
-                            <p>Conocido como el arte de las ocho extremidades o boxeo tailandés, el Muaythai usa golpes de manos, tibias, codos y rodillas.</p> 
-                        </div>
-                        <div class="entrenamiento__info">
-                            <img src="imagenes/silueta_jiujitsu.png" alt="">
-                            <h3>Jiu Jitsu</h3> 
-                            <p>Se centra principalmente en la lucha cuerpo a cuerpo en el suelo, usando para ello luxaciones, estrangulaciones, inmovilizaciones y derribos.</p> 
-                        </div>
-                        <div class="entrenamiento__info">
-                            <img src="imagenes/silueta_capoeira.png" alt="">
-                            <h3>Capoeira</h3> 
-                            <p>Es conocido por sus rápidos y complejos movimientos, que utilizan los brazos y las piernas para ejecutar maniobras de gran agilidad en forma de patadas, fintas y derribos.</p>    
-                        </div>
-                        <div class="entrenamiento__info">
-                            <img src="imagenes/silueta_cs.png" alt="">
-                            <h3>Combat Sambo</h3> 
-                            <p>Engloba técnicas de todas las distancias de combate; golpeo con puños, codos, rodillas, piernas y cuerpo a cuerpo, derribos, proyecciones, estrangulaciones, luxaciones y todo tipo de sumisiones.</p>    
-                        </div>  
-                </div>
-                    <!--  <button>
-                        <a href="./paginas/disciplinas.html">Disciplinas</a>
-                    </button> -->
-                    
-                </article>
                 <!--promociones-->
-                <article class="promociones">
+                <article class="container-fluid bg-black promociones">
                     <br>
                     <br>
                     <div class="promociones__titulo">
                         <ul>
                             <li>¿Listo para dar el siguiente paso?</li>
-                            <li>¡Aprovecha nuestras promociones!</li>
+                            <li class="efecto">¡Aprovecha nuestras promociones!</li>
                         </ul>    
                     </div>
-                    
-                    
-                    <div class="promociones__contenedor">
-                        <div class="promociones__info">
+                    <div class="row justify-content-center">
+                        <div class=" col-md-3 col-xs-12 promociones__info">
                             <h3 class="info_titulo">Muaythai</h3>
-                            <p class="info_desc">30% off</p>
+                            <p class="info_desc"> <span class="icon-fire"></span> 30% off</p>
                             <img class="info_imagen" src="imagenes/muay3x2.png" alt="imagen no encontrada">
                             <button class="info_boton">
                                 <a href="./paginas/contacto.html">Inscríbete</a>  
                             </button>
                         </div>
-                        <div class="promociones__info">
-                            <h3 class="info_titulo">Jiu Jitsu</h3>
-                            <p class="info_desc">30% off</p>
-                            <img class="info_imagen" src="imagenes/jj3x2.png" alt="imagen no encontrada">
-                            <button class="info_boton">
-                                <a href="./paginas/contacto.html">Inscríbete</a>
-                            </button>
-                        </div>
-                        <div class="promociones__info"> 
-                            <h3 class="info_titulo">Dos disciplinas</h3>
-                            <p class="info_desc">50% off</p>
+                        <div class="col-md-3 col-xs-12 promociones__info"> 
+                            <h3 class="info_titulo">2 x 1</h3>
+                            <p class="info_desc">  <span class="icon-fire"></span> 50% off</p>
                             <img class="info_imagen" src="imagenes/muayjj.png" alt="imagen no encontrada">
                             <button class="info_boton">
                                 <a href="./paginas/contacto.html">Inscríbete</a>
                             </button>
                         </div>
-                    </div>
-                    <div class="promocion__boton">
-                        <button>
-                            <a href="./paginas/membresias.html">Ver más</a> 
-                        </button>
+                        <div class="col-md-3 col-xs-12 promociones__info">
+                            <h3 class="info_titulo">Jiu Jitsu</h3>
+                            <p class="info_desc">  <span class="icon-fire"></span> 30% off</p>
+                            <img class="info_imagen" src="imagenes/jj3x2.png" alt="imagen no encontrada">
+                            <button class="info_boton">
+                                <a href="./paginas/contacto.html">Inscríbete</a>
+                            </button>
+                        </div>
                     </div> 
-                </article>   
+                </article>
             </section>
-        </main>
-        <footer>
-            <div class="footer__infoContact">
-                <p>fight2fit.contacto@gmail.com</p> 
-                <p>Celular +051 975161889</p> 
-                <p>Jr. Nicolas Rodrigo cdra. 1, Lima Perú</p> 
-            </div>
-            <div class="footer__copyright">
-             <p>Fight 2 Fit es una marca registrada. ©2021</p>
-             <p>Diseño y desarrollo por Biaggio Consoli</p>
-            </div>
-            <div class="footer__redes">
-                <p>Síguenos en</p>
-                <div class="footer__redes_logos">
-                    <a href="#"><img src="./imagenes/facebook.png" alt="imagen no encontrada"></a>   
-                    <a href="#"><img src="./imagenes/insta.png" alt="imagen no encontrada"></a> 
-                    <a href="#"><img src="./imagenes/whatsapp.png" alt="imagen no encotrada"></a> 
+            <footer class="piePagina">
+                <div class="container" >
+                    <div class="row justify-content-space-around ">
+                        <div class="col-md-3  col-xs-12 piePagina__redes">
+                            <img src="./imagenes/logof2f_blanco.png" alt="" width="60%">
+                            <div class="piePagina__redes_logos">
+                                <a href="#"><span class="icon-instagram"></span></a>   
+                                <a href="#"><span class="icon-facebook2"></span></a> 
+                                <a href="#"><span class="icon-whatsapp"></span></a> 
+                                <a href="#"><span class="icon-youtube"></span></a>
+                                <a href="#"><span class="icon-twitter"></span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 piePagina__infoContact">
+                            <h4>Contáctenos</h4>
+                            <h5><span class="icon-mail2"></span> fight2fit.@gmail.com</h5> 
+                            <h5><span class="icon-mobile"></span> +051 975161889</h5> 
+                            <h5><span class="icon-location"></span> Jr. Nicolas Rodrigo cdra. 1, Perú</h5> 
+                        </div>
+                        <div class="col-md-3  col-xs-12 piePagina__enlaces">
+                            <h4>Enlaces rápidos</h4>
+                            <div class="piePagina__enlaces_contenedor">
+                                <div>
+                                    <ul>
+                                        <li><a href="#">Fotos</a></li>     
+                                        <li><a href="#">Noticias</a></li>      
+                                        <li><a href="#">Videos</a></li>     
+                                        <li><a href="#">Testimonios</a></li> 
+                                    </ul>
+                                </div>
+                               
+                            </div>   
+                        </div>
+                        <div class="col-md-3  col-xs-12 piePagina__horarios">
+                            <h4>Horario de apertura</h4>
+                            <div class="piePagina__horarios_contenedor">
+                                <div>
+                                    <h5>Lun - vie: 06:30 - 20:30 </h5>    
+                                    <h5>Sábado: 09:00 - 13:00 </h5>      
+                                    <h5>Domingo: Cerrado</h5>     
+                                </div>
+                               
+                            </div>
+                        </div>
+                        
+                    </div> 
+                    <div class="piePagina__copyright">
+                        <h6>©2021 Fight 2 Fit es una marca registrada / Diseño y desarrollo por Biaggio Consoli</h6>
+                        <h6></h6>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 </html>
