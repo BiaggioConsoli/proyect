@@ -1,4 +1,188 @@
 @charset "UTF-8";
+/*rerseña*/
+.reseña {
+  padding-top: 2%;
+  padding-bottom: 2%; }
+  .reseña .reseña__info h1 {
+    color: #d72136;
+    font-size: 30px;
+    font-family: 'fuente3';
+    font-weight: bold;
+    text-align: center; }
+  .reseña .reseña__info p {
+    font-family: 'fuente2';
+    color: whitesmoke;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+    font-weight: bold;
+    text-align: center; }
+
+/*entrenamiento*/
+.entrenamiento {
+  margin-bottom: 3%; }
+  .entrenamiento h2 {
+    font-family: 'fuente3';
+    color: #d72136;
+    font-size: 26px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center; }
+  .entrenamiento img {
+    width: 35%; }
+
+.entrenamiento__info {
+  width: 20%; }
+  .entrenamiento__info .card {
+    height: 100%;
+    background-color: #efefef; }
+    .entrenamiento__info .card img {
+      width: 100%;
+      padding: 5%; }
+    .entrenamiento__info .card p {
+      font-family: 'fuente2';
+      color: whitesmoke;
+      font-size: 16px;
+      text-align: justify;
+      line-height: 1.6;
+      font-weight: bold;
+      color: black;
+      padding: 3%; }
+    .entrenamiento__info .card h3 {
+      font-family: 'fuente3';
+      color: #d72136;
+      font-size: 24px;
+      text-align: center; }
+
+/*promociones*/
+.promociones {
+  padding-bottom: 30px; }
+  .promociones .promociones__titulo {
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    margin: auto; }
+    .promociones .promociones__titulo ul {
+      font-family: 'fuente3';
+      color: #d72136;
+      font-size: 26px;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      text-align: center;
+      list-style: none;
+      animation: cambiar 7s infinite; }
+
+.efecto {
+  color: #efefef; }
+
+.promociones__info {
+  width: 25%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: "titulo descuento" " img img"  " boton boton";
+  margin-top: 3%;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-bottom: 5%; }
+  .promociones__info h3 {
+    font-family: 'fuente3';
+    color: #d72136;
+    font-size: 24px;
+    text-align: center;
+    justify-self: start;
+    align-self: center; }
+  .promociones__info h4 {
+    font-family: 'fuente2';
+    color: #efefef;
+    font-size: 20px;
+    justify-self: end;
+    align-self: center; }
+    .promociones__info h4 .icon-fire {
+      color: red; }
+  .promociones__info img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    justify-self: end;
+    align-self: center; }
+  .promociones__info button {
+    width: 50%;
+    background-color: #d72136;
+    border: 2px solid #d72136;
+    height: 70%;
+    align-self: end;
+    justify-self: end;
+    border-radius: 4px; }
+    .promociones__info button a {
+      color: #efefef;
+      font-size: 15px;
+      font-family: 'fuente2';
+      text-decoration: none;
+      font-weight: bold; }
+      .promociones__info button a:hover {
+        color: black; }
+
+.info_titulo {
+  grid-area: titulo; }
+
+.info_imagen {
+  grid-area: img; }
+
+.info_desc {
+  grid-area: descuento; }
+
+.info_boton {
+  grid-area: boton; }
+
+@keyframes cambiar {
+  0% {
+    margin-top: 0; }
+  20% {
+    margin-top: 0; }
+  60% {
+    margin-top: -40px; }
+  80% {
+    margin-top: -40px; }
+  100% {
+    margin-top: 0; } }
+
+@media screen and (max-width: 576px) {
+  /*rerseña*/
+  .reseña {
+    padding-top: 6%;
+    padding-bottom: 2%; }
+    .reseña .reseña__info h1 {
+      font-size: 18px; }
+    .reseña .reseña__info p {
+      font-size: 10px; }
+  /*entrenamiento*/
+  .entrenamiento img {
+    width: 60%; }
+  .entrenamiento h2 {
+    font-size: 16px; }
+  .entrenamiento__info {
+    width: 45%;
+    padding: 1%; }
+    .entrenamiento__info .card {
+      width: 100%; }
+      .entrenamiento__info .card h3 {
+        font-size: 14px; }
+      .entrenamiento__info .card p {
+        font-size: 10px; }
+  /*promociones*/
+  .promociones__titulo {
+    width: 100%; }
+    .promociones__titulo ul {
+      padding-left: 0; }
+      .promociones__titulo ul li {
+        font-size: 16px; }
+  .promociones__info {
+    width: 80%; } }
+
 /* Reseteo de estilos */
 * {
   margin: 0;
@@ -110,170 +294,6 @@ header {
   margin-top: 40px; }
 
 /*Index*/
-/*rerseña*/
-.reseña {
-  padding-top: 2%;
-  padding-bottom: 2%; }
-
-.reseña__contenedor_info h1 {
-  font-family: 'fuente3';
-  color: #d72136;
-  text-align: center;
-  font-size: 30px; }
-
-.reseña__contenedor_info p {
-  font-family: 'fuente2';
-  color: whitesmoke;
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: bold;
-  text-align: center; }
-
-/*entrenamiento*/
-.entrenamiento {
-  margin-bottom: 3%; }
-
-.entrenamiento__info {
-  width: 20%; }
-
-.entrenamiento h2 {
-  text-align: center;
-  font-family: 'fuente3';
-  color: #d72136;
-  font-size: 26px;
-  margin-top: 2%;
-  margin-bottom: 2%; }
-
-.entrenamiento__collage img {
-  width: 35%;
-  margin-bottom: 3%; }
-
-.card {
-  height: 100%;
-  background-color: #efefef; }
-
-.card img {
-  padding: 5%; }
-
-.entrenamiento p {
-  font-family: 'fuente2';
-  color: black;
-  font-size: 14px;
-  line-height: 1.6;
-  font-weight: bold;
-  padding: 3%; }
-
-.entrenamiento h5 {
-  font-family: 'fuente3';
-  color: #d72136;
-  font-size: 25px;
-  text-align: center; }
-
-/*promociones*/
-.promociones {
-  padding-bottom: 30px; }
-
-.promociones__info {
-  width: 25%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 80% 10%;
-  grid-template-areas: "titulo descuento" " img img"  " boton boton";
-  margin-top: 3%;
-  border: 1px solid #efefef;
-  border-radius: 8px;
-  padding: 10px;
-  margin-right: 1%;
-  margin-left: 1%;
-  margin-bottom: 5%; }
-
-.info_titulo {
-  grid-area: titulo; }
-
-.info_imagen {
-  grid-area: img; }
-
-.info_desc {
-  grid-area: descuento; }
-
-.info_boton {
-  grid-area: boton; }
-
-.promociones__info h3 {
-  font-family: 'fuente3';
-  color: #d72136;
-  font-size: 25px;
-  justify-self: start;
-  align-self: center;
-  margin-bottom: 0; }
-
-.promociones__info p {
-  font-family: 'fuente2';
-  color: #efefef;
-  font-size: 20px;
-  margin-bottom: 0;
-  justify-self: end;
-  align-self: center; }
-
-.promociones__info button {
-  width: 50%;
-  background-color: #d72136;
-  border: 2px solid #d72136;
-  height: 70%;
-  align-self: end;
-  justify-self: end;
-  border-radius: 4px; }
-
-.promociones__info a {
-  color: #efefef;
-  font-size: 15px;
-  font-family: 'fuente2';
-  text-decoration: none;
-  font-weight: bold; }
-
-.promociones__info a:hover {
-  color: black; }
-
-.promociones__info img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  justify-self: end;
-  align-self: center; }
-
-.promociones__titulo {
-  width: 70%;
-  height: 40px;
-  line-height: 40px;
-  overflow: hidden;
-  margin: auto; }
-
-.promociones__titulo ul {
-  font-family: 'fuente3';
-  color: #d72136;
-  font-size: 30px;
-  list-style: none;
-  text-align: center;
-  animation: cambiar 7s infinite; }
-
-.efecto {
-  color: #efefef; }
-
-@keyframes cambiar {
-  0% {
-    margin-top: 0; }
-  20% {
-    margin-top: 0; }
-  60% {
-    margin-top: -40px; }
-  80% {
-    margin-top: -40px; }
-  100% {
-    margin-top: 0; } }
-
-.icon-fire {
-  color: red; }
-
 /*Disciplinas*/
 .disciplinas {
   background-color: black;
@@ -375,154 +395,259 @@ header {
   color: #efefef;
   padding-left: 20px; }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-  .promociones__info a {
-    font-size: 12px; } }
+/*efecto para que se agranden al pasar al mouse
+.disciplinas__galeria_imagenes img:hover {
+    transform: scale(1.5);
+    z-index: 3;
+}*/
+/*Staff*/
+.staffEncabezado {
+  width: 100%;
+  background-color: black;
+  height: 495px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto; }
 
-/*Dispositivos grandes*/
-@media screen and (min-width: 769px) and (max-width: 992px) {
-  .entrenamiento__info {
-    width: 40%;
-    padding: 1%; }
-  .promociones__info {
-    width: 30%; }
-  .promociones__info a {
-    font-size: 10px; }
-  .promociones__info h3 {
-    font-family: 'fuente3';
-    color: #d72136;
-    font-size: 18px;
-    justify-self: start;
-    align-self: center; }
-  .promociones__info p {
-    font-family: 'fuente2';
-    color: #efefef;
-    font-size: 16px;
-    justify-self: end;
-    align-self: end; } }
+.stattEncabezado__slider {
+  width: 70%;
+  height: 400px;
+  animation: banner 6s infinite linear alternate;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto; }
 
-/*Dispositivos medianos*/
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  .entrenamiento__info {
-    width: 45%;
-    padding: 1%; }
-  .promociones__info {
-    width: 80%; }
-  /*footer*/
-  .piePagina__redes {
-    margin-top: 5%;
-    margin-bottom: 5%; }
-  .piePagina__enlaces {
-    margin-bottom: 5%;
-    padding-left: 3%; }
-  .piePagina__horarios {
-    margin-bottom: 5%;
-    padding-left: 3%; }
-  .piePagina__infoContact {
-    padding-left: 3%;
-    margin-bottom: 5%; } }
+.staff h2 {
+  font-family: 'fuente3';
+  color: #d72136;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%; }
 
-/*Dispositivos pequeños*/
-@media screen and (max-width: 576px) {
-  /*Barramenu*/
-  .barramenu_links a {
-    font-size: 16px;
-    padding: 1%; }
-  /*footer*/
-  .piePagina__redes {
-    margin-top: 5%;
-    margin-bottom: 5%; }
-  .piePagina__enlaces {
-    margin-bottom: 5%;
-    padding-left: 8%; }
-  .piePagina__horarios {
-    margin-bottom: 5%;
-    padding-left: 8%; }
-  .piePagina__infoContact {
-    padding-left: 8%;
-    margin-bottom: 5%; }
-  /*Index*/
-  /*rerseña*/
-  .reseña {
-    padding-top: 4%;
-    padding-bottom: 2%; }
-  .reseña__contenedor_info h1 {
-    font-family: 'fuente3';
-    color: #d72136;
-    text-align: center;
-    font-size: 16px; }
-  .reseña__contenedor_info p {
-    font-family: 'fuente2';
-    color: whitesmoke;
-    font-size: 10px;
-    line-height: 1.6;
-    font-weight: bold;
-    text-align: justify; }
-  /*entrenamiento*/
-  .entrenamiento h2 {
-    font-size: 16px;
-    margin-top: 3%;
-    margin-bottom: 5%; }
-  .entrenamiento__info {
-    width: 45%;
-    padding: 1%; }
-  .card {
-    width: 100%;
-    background-color: #efefef; }
-  .entrenamiento p {
-    font-family: 'fuente2';
-    color: black;
-    font-size: 10px;
-    padding: 1%; }
-  .entrenamiento h5 {
-    font-family: 'fuente3';
-    color: #d72136;
-    font-size: 16px; }
-  /*promociones*/
-  .promociones__titulo ul {
-    font-size: 16px; }
-  .promociones__titulo {
-    width: 100%;
-    margin-top: -10%; }
-  .promociones__info {
-    width: 80%; }
-  .promociones__info h3 {
-    font-size: 18px; }
-  .promociones__info p {
-    font-size: 14px; }
-  .promociones__info button {
-    width: 40%; }
-  .promociones__info a {
-    font-size: 12px; }
-  /*Disciplinas*/
-  .disciplinas__imagen {
-    padding-bottom: 0; }
-  .disciplinas__coach_imagen {
-    display: none; }
-  .disciplinas__coach_info {
-    display: none; }
-  .disciplinas__info {
-    width: 100%;
-    margin-top: -25px; }
-  .disciplinas h2 {
-    font-size: 16px;
-    padding-bottom: 0; }
-  .disciplinas__info p {
-    font-size: 10px;
-    padding-bottom: 0px; }
-  .disciplinas__coach {
-    padding-bottom: 0px; }
-  .disciplinas h4 {
-    font-size: 14px; }
-  .disciplina__btn {
-    display: flex;
-    justify-content: center;
-    background-color: #252527;
-    height: 80px;
-    align-items: center;
-    margin-bottom: 50px; }
-  .disciplinas__btn_contenedor {
-    width: 50%; }
-  .disciplinas__btn_contenedor h5 {
-    color: #efefef;
-    font-size: 12px; } }
+.staff__profesores {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 5%; }
+
+.staff__profesoresInfo {
+  background-color: black;
+  width: 22%;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px darkgray;
+  transition: all 0.25s; }
+
+.staff__profesoresInfo:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px darkgray; }
+
+.staff__profesoresInfo h3 {
+  font-family: 'fuente3';
+  color: #d72136;
+  font-size: 20px;
+  padding-left: 8%;
+  line-height: 1.6; }
+
+.staff__profesoresInfo h4 {
+  font-family: 'fuente3';
+  color: #d72136;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-left: 8%; }
+
+.staff__profesoresInfo ul {
+  padding-right: 8%;
+  padding-left: 8%;
+  padding-bottom: 5%; }
+
+.staff__profesoresInfo li {
+  font-family: 'fuente2';
+  color: #efefef;
+  font-size: 14px;
+  line-height: 1.6; }
+
+.staff__profesoresInfo_imagen {
+  text-align: center; }
+
+.staff__profesoresInfo_imagen img {
+  width: 90%;
+  margin-top: 5%; }
+
+.staff {
+  padding-bottom: 10%; }
+
+/* PAGINA MEMBRESIAS*/
+.titulo_membresias {
+  width: 70%;
+  margin: auto;
+  text-align: center; }
+
+.titulo_membresias h2 {
+  font-family: 'fuente3';
+  color: #d72136;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+
+.membresias {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; }
+
+.membresias__contenedor {
+  width: 20%;
+  background-image: linear-gradient(to bottom, grey, black);
+  padding: 2%;
+  margin-bottom: 2%;
+  border-radius: 8px; }
+
+.membresias__contenedor_imagen img {
+  width: 100%; }
+
+.membresias h2 {
+  font-family: 'fuente3';
+  color: #d72136;
+  font-size: 25px;
+  padding-bottom: 1%; }
+
+.membresias h3 {
+  font-family: 'fuente2';
+  color: #d72136;
+  font-size: 20px; }
+
+.membresias li {
+  font-family: 'fuente2';
+  color: #efefef;
+  font-size: 14px;
+  line-height: 1.6; }
+
+.membresias p {
+  font-family: 'fuente2';
+  color: whitesmoke;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.6;
+  font-weight: bold; }
+
+.membresiasPromociones {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 10%; }
+
+.membresiasPromociones__mes {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  border-radius: 8px; }
+
+.membresiasPromociones__mes img {
+  width: 30%;
+  padding: 3% 1%; }
+
+/*PAGINA CONTACTO*/
+/*Formulario*/
+.contacto {
+  width: 70%;
+  margin: auto;
+  background-color: black;
+  display: flex;
+  margin-top: 2.5%;
+  margin-bottom: 10%; }
+
+.contacto__formulario {
+  width: 50%; }
+
+.contacto__formulario h2 {
+  font-family: 'fuente2';
+  color: #efefef;
+  font-size: 20px;
+  width: 80%;
+  margin: auto;
+  padding-top: 8%;
+  line-height: 1.6; }
+
+.contacto__formulario form {
+  width: 80%;
+  margin: auto; }
+
+fieldset {
+  width: 90%;
+  padding: 6%;
+  margin-top: 2%; }
+
+fieldset legend {
+  color: #d72136;
+  font-family: 'fuente2';
+  font-size: 20px;
+  padding-bottom: 2%; }
+
+fieldset label {
+  color: white;
+  font-family: 'fuente2';
+  font-size: 15px; }
+
+.btn_form input {
+  background-color: whitesmoke;
+  margin-right: 10px;
+  padding: 5px;
+  font-family: 'fuente2';
+  box-shadow: 0px 2px 0px #d72136; }
+
+.btn_form input:hover {
+  box-shadow: 0px 3px 0px;
+  padding-top: 6px; }
+
+/*Información de contacto*/
+.contacto__contenedor {
+  width: 50%;
+  background-color: black; }
+
+.contacto__contenedor_info {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+.contacto__contenedor_info h3 {
+  font-family: 'fuente2';
+  color: #d72136;
+  font-size: 25px;
+  line-height: 1.6; }
+
+.contacto__contenedor_info h4 {
+  font-family: 'fuente2';
+  color: white;
+  font-size: 18px;
+  line-height: 1.6; }
+
+.contacto__contenedor_info p {
+  font-family: 'fuente2';
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-top: 2%; }
+
+.contacto__contenedor_info p span {
+  color: #d72136;
+  padding-right: 1%; }
+
+.contacto__contenedor_info img {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+
+/* ------------------------------------------------ */
+@keyframes banner {
+  0%, 45% {
+    background-image: url(../imagenes/staff.png); }
+  50%, 100% {
+    background-image: url(../imagenes/portada-03.png); } }
+
+/*entrenamiento*/

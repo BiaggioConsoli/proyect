@@ -1,0 +1,34 @@
+@mixin titulo {
+    color: #d72136;
+    font-size: 30px;
+    font-family: 'fuente3';
+    font-weight: bold;
+}
+
+@mixin parrafo {
+    font-family:'fuente2';
+    color: whitesmoke;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+@mixin subtitulo {
+    font-family: 'fuente3';
+    color: #d72136;
+    font-size: 26px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+@mixin subtitulo2 {
+    font-family: 'fuente3';
+    color: #d72136;
+    font-size: 24px;
+    text-align: center; 
+}
+
+
+
