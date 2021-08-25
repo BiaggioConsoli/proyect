@@ -170,7 +170,7 @@
     .entrenamiento__info .card {
       width: 100%; }
       .entrenamiento__info .card h3 {
-        font-size: 14px; }
+        font-size: 16px; }
       .entrenamiento__info .card p {
         font-size: 10px; }
   /*promociones*/
@@ -181,7 +181,11 @@
       .promociones__titulo ul li {
         font-size: 16px; }
   .promociones__info {
-    width: 80%; } }
+    width: 80%; }
+    .promociones__info h3 {
+      font-size: 14px; }
+    .promociones__info h4 {
+      font-size: 12px; } }
 
 /* Reseteo de estilos */
 * {
