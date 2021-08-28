@@ -44,17 +44,16 @@
             width: 100%;
             padding: 5%;
         } 
+        h3 {
+            @include subtitulo2;
+            text-align: center;
+        }
         p {
             @include parrafo;
             color: black;
             padding: 3%;
         }
-        a {
-            text-decoration: none;
-            h3 {
-                @include subtitulo2;
-            }
-        }  
+        
     }
 }
 

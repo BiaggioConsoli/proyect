@@ -43,6 +43,12 @@
     .entrenamiento__info .card img {
       width: 100%;
       padding: 5%; }
+    .entrenamiento__info .card h3 {
+      font-family: 'fuente3';
+      color: #d72136;
+      font-size: 24px;
+      text-align: center;
+      text-align: center; }
     .entrenamiento__info .card p {
       font-family: 'fuente2';
       color: whitesmoke;
@@ -52,13 +58,6 @@
       font-weight: bold;
       color: black;
       padding: 3%; }
-    .entrenamiento__info .card a {
-      text-decoration: none; }
-      .entrenamiento__info .card a h3 {
-        font-family: 'fuente3';
-        color: #d72136;
-        font-size: 24px;
-        text-align: center; }
 
 /*promociones*/
 .promociones {
