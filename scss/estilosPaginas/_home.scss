@@ -5,12 +5,22 @@
     padding-top: 2%;
     padding-bottom: 2%;
     .reseña__info h1 {
-        @include titulo;
+        @if ($color_encabezado == rojo) {
+            color: $color_principal;
+        } @else if ($color_encabezado == negro) {
+            color: $color_fondoNav;
+        } @else if ($color_encabezado == gris) {
+            color: $color_fondoCards;
+        } @else {
+            color: blue;
+        }
         text-align: center;
-     }
-     .reseña__info p {
+        @include titulo;
+    }
+    .reseña__info p {
         @include parrafo;
         text-align: center;
+        
     }
 }
 
@@ -29,7 +39,7 @@
     width: 20%;
     .card {
         height: 100%;
-        background-color: #efefef;
+        background-color: $color_fondoCards;
         img {
             width: 100%;
             padding: 5%;
@@ -39,9 +49,12 @@
             color: black;
             padding: 3%;
         }
-        h3 {
-            @include subtitulo2;
-        }
+        a {
+            text-decoration: none;
+            h3 {
+                @include subtitulo2;
+            }
+        }  
     }
 }
 
@@ -158,11 +171,12 @@
     .reseña {
         padding-top: 6%;
         padding-bottom: 2%;
-        .reseña__info h1 {
-            font-size: 18px;
+        /*operacion resta scss*/
+        .reseña__info h1 { 
+            font-size: 30px - 12;
         }
         .reseña__info p {
-            font-size: 10px;
+            font-size: 16px -  4;
         }
     }
 
@@ -197,9 +211,9 @@
        width: 100%;
        ul {
             padding-left: 0;
-        li {
-            font-size: 16px;
-        }
+            li {
+                font-size: 16px;
+            }
        }
     }
 

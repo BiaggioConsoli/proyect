@@ -1,5 +1,13 @@
+
+/*Variables*/
+$color_principal:#d72136;
+$color_parrafos: whitesmoke;
+$color_fondoCards: #efefef;
+$color_fondoNav: black;
+
+/*Mixin*/
 @mixin titulo {
-    color: #d72136;
+    /*color: $color_principal;*/
     font-size: 30px;
     font-family: 'fuente3';
     font-weight: bold;
@@ -7,7 +15,7 @@
 
 @mixin parrafo {
     font-family:'fuente2';
-    color: whitesmoke;
+    color: $color_parrafos;
     font-size: 16px;
     text-align: justify;
     line-height: 1.6;
@@ -16,7 +24,7 @@
 
 @mixin subtitulo {
     font-family: 'fuente3';
-    color: #d72136;
+    color: $color_principal;
     font-size: 26px;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -25,10 +33,18 @@
 
 @mixin subtitulo2 {
     font-family: 'fuente3';
-    color: #d72136;
+    color: $color_principal;
     font-size: 24px;
     text-align: center; 
 }
+
+/*if H1 reseña*/
+$color_encabezado: rojo;
+
+
+
+
+
 
 
 

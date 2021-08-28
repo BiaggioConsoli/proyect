@@ -1,14 +1,18 @@
 @charset "UTF-8";
+/*Variables*/
+/*Mixin*/
+/*if H1 reseña*/
 /*rerseña*/
 .reseña {
   padding-top: 2%;
   padding-bottom: 2%; }
   .reseña .reseña__info h1 {
     color: #d72136;
+    text-align: center;
+    /*color: $color_principal;*/
     font-size: 30px;
     font-family: 'fuente3';
-    font-weight: bold;
-    text-align: center; }
+    font-weight: bold; }
   .reseña .reseña__info p {
     font-family: 'fuente2';
     color: whitesmoke;
@@ -48,11 +52,13 @@
       font-weight: bold;
       color: black;
       padding: 3%; }
-    .entrenamiento__info .card h3 {
-      font-family: 'fuente3';
-      color: #d72136;
-      font-size: 24px;
-      text-align: center; }
+    .entrenamiento__info .card a {
+      text-decoration: none; }
+      .entrenamiento__info .card a h3 {
+        font-family: 'fuente3';
+        color: #d72136;
+        font-size: 24px;
+        text-align: center; }
 
 /*promociones*/
 .promociones {
@@ -154,11 +160,12 @@
   /*rerseña*/
   .reseña {
     padding-top: 6%;
-    padding-bottom: 2%; }
+    padding-bottom: 2%;
+    /*operacion resta scss*/ }
     .reseña .reseña__info h1 {
       font-size: 18px; }
     .reseña .reseña__info p {
-      font-size: 10px; }
+      font-size: 12px; }
   /*entrenamiento*/
   .entrenamiento img {
     width: 60%; }
@@ -187,6 +194,9 @@
     .promociones__info h4 {
       font-size: 12px; } }
 
+/*Variables*/
+/*Mixin*/
+/*if H1 reseña*/
 /* Reseteo de estilos */
 * {
   margin: 0;
@@ -304,8 +314,41 @@ header {
   padding-bottom: 30px; }
 
 .disciplinas__imagen {
-  padding-bottom: 14px; }
+  padding-bottom: 14px;
+  position: relative; }
 
+.disciplinas__imagen_titulo {
+  position: absolute;
+  bottom: 0;
+  padding: 1%;
+  padding-left: 2%;
+  background: rgba(0, 0, 0, 0.7); }
+
+.disciplinas__imagen_titulo h5 {
+  font-size: 40px;
+  font-family: 'fuente3';
+  color: #d72136; }
+
+/*efecto hover sobre la imagen
+.disciplinas__imagen {
+    padding-bottom: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+.disciplinas__imagen_titulo  {
+    position: absolute;
+    bottom: 0;
+    padding: 1%;
+    padding-left: 2%;
+    background: rgba(0,0,0,0.7);
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+}
+
+.disciplinas__imagen img:hover .disciplinas__imagen_titulo {
+    transform: translateY(0%);
+}*/
 .disciplinas__coach {
   display: flex;
   padding-bottom: 14px;
