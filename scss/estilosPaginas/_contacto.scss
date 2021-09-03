@@ -1,0 +1,163 @@
+@import "estilosPaginas/estilosVar";
+
+body {
+    background: $color_fondoBody;
+}
+
+.contacto {
+    background: $color_fondoArticle;
+    padding-bottom: 5%;
+    
+
+    .contacto__imagen {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .contacto__info {
+        width: 100%;
+        display: flex;
+        .contacto__info_datos {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            h3 {
+                @include encabezadoh3;
+            }
+            p {
+                @include parrafo;
+                span {
+                    color: $color_principal;
+                    padding-right: 1%;
+                }
+            }
+            a {
+                img{
+                    width: 80%;
+                    margin-top: 1%;
+                    margin-bottom: 3%;    
+                }
+            }
+        }
+
+        .contacto__info_form {
+            width: 40%;
+            h4 {
+                @include encabezadoH4;
+            }
+            form {
+                fieldset {
+                    legend{
+                        @include encabezadoH4;
+                        font-family: 'fuente2';
+                    }
+                    .fieldset__datos {
+                        padding: 1%;
+                        label {
+                            @include parrafo;
+                            font-weight: bold;
+                            padding-right: 1%;   
+                        }
+                    }
+                    .fieldset__boton {
+                        @include boton;
+                        width: 28%;
+                        margin: 1%;
+                       
+                        border-radius: 4px;
+                        &:hover {
+                            box-shadow: 0px 3px 0px ;
+                            padding-top: 3px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+.btn_form input {
+    background-color: whitesmoke;
+    margin-right: 10px;
+    padding: 5px;
+    font-family: 'fuente2';
+    box-shadow: 0px 2px 0px #d72136;
+}
+
+.btn_form input:hover {
+    box-shadow: 0px 3px 0px ;
+    padding-top: 6px;
+}
+*/
+
+
+
+/*
+.formulario {
+    display: flex;
+    min-height: 100vh;
+    .form {
+        background: $color_fondoCards;
+        margin: auto;
+        width: 90%;
+        max-width: 400px;
+        padding: 3%;
+        border-radius: 8px;
+        .form__titulo {
+            @include encabezadoH5;
+            margin-bottom: 5%;
+        }
+        .form__contenedor {
+            display: grid;
+            gap: 5%;
+            .form__grupo {
+                position: relative;
+                --color: blue;
+                .form__input {
+                    width: 100%;
+                    background: none;
+                    color: gray;
+                    font-size: 18px;
+                    padding: 1%;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid var(--color);
+                    font-family: 'fuente2';
+                
+                    &:focus + .form__label, .form__input:not(:placeholder-shown) + .form__label {
+                        transform: translateY(-12px) scale(.7);
+                        transform-origin: left top;
+                    }
+
+                    /*&:not(:placeholder-shown) + .form__label{
+                    transform: translateY(-12px) scale(.7);
+                    transform-origin: left top;
+                    }*
+                }
+                .form__label {
+                    color: var(--color);
+                    
+                    position: absolute;
+                    font-family: 'fuente2';
+                    top: 0;
+                    left: 5px;
+                    transform: translateY(10px);
+                    transition: transform .5s, color .3s;
+                } 
+            }
+
+        }
+    }
+}
+*/

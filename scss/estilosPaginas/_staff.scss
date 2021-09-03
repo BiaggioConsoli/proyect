@@ -1,0 +1,68 @@
+@import "estilosPaginas/estilosVar";
+
+body {
+    background: $color_fondoBody;
+}
+
+.staff {
+    .staffEncabezado {
+        background: $color_fondoArticle;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    h2 {
+        @include encabezadoh2;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%; 
+    }
+    .staff__profesores { 
+        margin-bottom: 5%;
+        .staff__profesoresInfo {
+            width: 20%;
+            .card {
+                background: $color_fondoCards;
+                height: 100%;
+                border-radius: 8px;  
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+                transition: all 0.25s;
+                &:hover {
+                transform: translateY(-15px);
+                box-shadow: 12px 12px 10px 0px darkgray ;
+                }
+                img {
+                    width: 100%;
+                    padding: 5% 5% 0 5% ;
+                } 
+                h3 {
+                    @include encabezadoh3;
+                    text-align: center;
+                }
+                ul {
+                    li {
+                        @include parrafo;
+                        color: black; 
+                    }
+                } 
+            }                      
+        }      
+    }
+}
+
+
+/* Efecto carousel sin bootstrap
+.staffEncabezado__slider {
+    animation: banner 6s infinite linear alternate;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+@keyframes banner {
+    0%,45% {
+        background-image: url(../imagenes/staff.png);}
+    50%,100% {
+        background-image: url(../imagenes/portada-03.png);}      
+} */
+

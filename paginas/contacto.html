@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="../css/lightbox.css">
         <link rel="stylesheet" href="../css/probando.css">
         <link rel="stylesheet" href="../fonts/fonts.css">
-        <title>Disciplinas</title>
+        <script src="../js/scrollreveal.js"></script>
+        <title>Fight 2 Fit / Contacto</title>
     </head>
     <body>
         <header>
@@ -42,13 +43,17 @@
         </header>
         <main>
             <section>
-                <article class="contacto">
-                    <div class="contacto__contenedor">
-                        <div class="contacto__contenedor_info">
+                <article class="container-fluid contacto">
+                    <div class="container">
+                        <div class="row contacto__imagen">
+                            <img src="../imagenes/contacto.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center contacto__info" >
+                        <div class="contacto__info_datos">
                             <h3>
                                 <b>Fight 2 Fit Training Center</b> 
                             </h3>
-                            
                             <p><span class="icon-location"></span> Jr. Nicolás Rodrigo cdra. 1, Lima Perú</p>
                             <a href="https://www.google.com/maps/place/Fundo+Odr%C3%ADa/@-12.1007843,-76.9666393,17z/data=!3m1!4b1!4m5!3m4!1s0x9105c7a083c24a2d:0xc44a3bae10ffa38b!8m2!3d-12.1007884!4d-76.9644853">
                                 <img src="../imagenes/mapa.png" alt="imagen no encontrada" title="Ubicación">
@@ -56,57 +61,89 @@
                             <p><span class="icon-mail2"></span> fight2fit.contacto@gmail.com</p>
                             <p><span class="icon-mobile"></span> +051 975161889</p>
                         </div>
+                        <div class="contacto__info_form">
+                            <h4>Para inscripciones, clase de prueba o contacto, por favor llene el formulario</h4>
+                            <form action="">
+                                <fieldset>
+                                    <legend>Ingresa tus datos</legend>
+                                    <div class="fieldset__datos">
+                                        <label for="Primer nombre"></label>
+                                        <input type="text" name="Primer nombre" placeholder="Primer nombre" required>
+                                        <label for="Apellido"></label>
+                                        <input type="text" name="Apellido" placeholder="Apellido" required>
+                                    </div> 
+                                    <div class="fieldset__datos">
+                                        <label for="email"></label>
+                                        <input type="email" name="Email" placeholder="nombre@ejemplo.com" required>
+                                        <label for="Numero de telefono"></label>
+                                        <input type="tel" name="Numero de telefono" placeholder="Número celular" required>
+                                    </div>
+                                    <div class="fieldset__datos">
+                                        <label for="Disciplinas de Interes">Disciplina de interes</label>
+                                            <select name="Disciplina de interes">
+                                                <option value="Muaythai">Muaythai</option>
+                                                <option value="Jiu Jitsu">Jiu jitsu</option>
+                                                <option value="Capoeira">Capoeira</option>
+                                                <option value="Combat Sambo">Combat Sambo</option>
+                                            </select>
+                                    </div>
+                                    <div class="fieldset__datos">
+                                        <label for="Recibir información">Recibir información de promociones</label>
+                                        <input type="checkbox" name="Recibir información" value="1">
+                                        <br>
+                                        <br>
+                                        <textarea rows="8" cols="52" name="mensaje" placeholder="Mensaje" required></textarea>
+                                    </div>
+                                    <div>
+                                        <input type="submit" class="fieldset__boton" value="Enviar formulario"> 
+                                        <input type="reset" class="fieldset__boton" value="Limpiar formulario"> 
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>  
                     </div>
-                    <div class="contacto__formulario">
-                        <h2>Para inscripciones, clase de prueba o contacto, por favor llene el formulario</h2>
-                        <form action="">
-                            <fieldset>
-                                <legend></legend>
-                                <label for="Primer nombre"></label>
-                                <input type="text" name="Primer nombre" placeholder="Primer nombre" required>
-                                <label for="Apellido"></label>
-                                <input type="text" name="Apellido" placeholder="Apellido" required>
-                                <br>
-                                <br>
-                                <label for="email"></label>
-                                <input type="email" name="Email" placeholder="nombre@ejemplo.com" required>
-                                <label for="Numero de telefono"></label>
-                                <input type="tel" name="Numero de telefono" placeholder="Número celular" required>
-                                <br>
-                                <br>
-                                <label for="Disciplinas de Interes">Disciplina de interes</label>
-                                    <select name="Disciplina de interes">
-                                        <option value="Muaythai">Muaythai</option>
-                                        <option value="Jiu Jitsu">Jiu jitsu</option>
-                                        <option value="Capoeira">Capoeira</option>
-                                        <option value="Combat Sambo">Combat Sambo</option>
-                                    </select>
-                                <br>
-                                <br>
-                                <label for="Recibir información">Recibir información de promociones</label>
-                                <input type="checkbox" name="Recibir información" value="1">
-                                <br>
-                                <br>
-                                <textarea rows="8" cols="46" name="mensaje" placeholder="Mensaje" required></textarea>
-                                <br>
-                                <br>
-                                <div class="btn_form">
-                                    <input type="submit" value="Enviar formulario"> 
-                                    <input type="reset" value="Limpiar formulario">
-                                </div>
-                               
-                            </fieldset>
-                        </form>
-                    </div>  
-                </article>   
+                </article>
+                <!--  
+                <div class="formulario">
+                    <form class="form">
+                        <h5 class="form__titulo">
+                            Para inscripciones, clase de prueba o contacto, por favor llene el formulario
+                        </h5>
+                        <div class="form__contenedor">
+                            <div class="form__grupo">
+                                <input type="text" id="nombre" class="form__input" placeholder="" required>
+                                <label for="nombre" class="form__label">Nombre:</label>
+                                <span class="form__liena"></span>
+                            </div>
+                            <div class="form__grupo">
+                                <input type="text" id="apellido" class="form__input" placeholder="" required>
+                                <label for="apellido" class="form__label">Apellido:</label>
+                                <span class="form__linea"></span>
+                            </div>
+                            <div class="form__grupo">
+                                <input type="email" id="email" class="form__input" placeholder="" required>
+                                <label for="email" class="form__label">Correo:</label>  
+                                <span class="form__linea"></span>      
+                            </div>
+                            <div class="form__grupo">
+                                <input type="tel" id="telefono"  class="form__input" placeholder="" required>
+                                <label for="telefono" class="form__label">Celular:</label>
+                                <span class="form__linea"></span>
+                            </div>
+                            <input type="submit" class="form__submit" value="Enviar formulario"> 
+                            <input type="reset" class="form__reset" value="Limpiar formulario">
+
+                        </div>
+                    </form>
+                </div> --> 
             </section>
         </main> 
-        <footer class="piePagina">
+        <footer class="pieDePagina">
             <div class="container" >
                 <div class="row justify-content-space-around ">
-                    <div class="col-md-3  col-xs-12 piePagina__redes">
-                        <img src="../imagenes/logof2f_blanco.png" alt="" width="60%">
-                        <div class="piePagina__redes_logos">
+                    <div class="col-md-3  col-xs-12 pieDePagina__redes">
+                        <img src="../imagenes/logof2f_blanco.png" class="logoFooter" alt="" width="60%">
+                        <div class="pieDePagina__redes_logos">
                             <a href="#"><span class="icon-instagram"></span></a>   
                             <a href="#"><span class="icon-facebook2"></span></a> 
                             <a href="#"><span class="icon-whatsapp"></span></a> 
@@ -114,15 +151,15 @@
                             <a href="#"><span class="icon-twitter"></span></a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-12 piePagina__infoContact">
+                    <div class="col-md-3 col-xs-12 pieDePagina__infoContact">
                         <h4>Contáctenos</h4>
                         <h5><span class="icon-mail2"></span> fight2fit.@gmail.com</h5> 
                         <h5><span class="icon-mobile"></span> +051 975161889</h5> 
                         <h5><span class="icon-location"></span> Jr. Nicolas Rodrigo cdra. 1, Perú</h5> 
                     </div>
-                    <div class="col-md-3  col-xs-12 piePagina__enlaces">
+                    <div class="col-md-3  col-xs-12 pieDePagina__enlaces">
                         <h4>Enlaces rápidos</h4>
-                        <div class="piePagina__enlaces_contenedor">
+                        <div class="pieDePagina__enlaces_contenedor">
                             <div>
                                 <ul>
                                     <li><a href="#">Fotos</a></li>     
@@ -134,9 +171,9 @@
                            
                         </div>   
                     </div>
-                    <div class="col-md-3  col-xs-12 piePagina__horarios">
+                    <div class="col-md-3  col-xs-12 pieDePagina__horarios">
                         <h4>Horario de apertura</h4>
-                        <div class="piePagina__horarios_contenedor">
+                        <div class="pieDePagina__horarios_contenedor">
                             <div>
                                 <h5>Lun - vie: 06:30 - 20:30 </h5>    
                                 <h5>Sábado: 09:00 - 13:00 </h5>      
@@ -147,7 +184,7 @@
                     </div>
                     
                 </div> 
-                <div class="piePagina__copyright">
+                <div class="pieDePagina__copyright">
                     <h6>©2021 Fight 2 Fit es una marca registrada / Diseño y desarrollo por Biaggio Consoli</h6>
                     <h6></h6>
                 </div>
@@ -158,5 +195,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>

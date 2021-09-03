@@ -1,11 +1,16 @@
 @import "estilosPaginas/estilosVar";
 
+body {
+    background: $color_fondoBody;
+}
+
 /*rerseña*/
 .reseña {
+    background: $color_fondoArticle;
     padding-top: 2%;
     padding-bottom: 2%;
     .reseña__info h1 {
-        @if ($color_encabezado == rojo) {
+        /*@if ($color_encabezado == rojo) {
             color: $color_principal;
         } @else if ($color_encabezado == negro) {
             color: $color_fondoNav;
@@ -13,22 +18,28 @@
             color: $color_fondoCards;
         } @else {
             color: blue;
-        }
+        }*/
         text-align: center;
-        @include titulo;
+        @include encabezadoh1;
     }
     .reseña__info p {
         @include parrafo;
         text-align: center;
+        font-weight: bold;
         
     }
 }
+
+
 
 /*entrenamiento*/
 .entrenamiento {
     margin-bottom: 3%;
     h2 {
-        @include subtitulo;
+        @include encabezadoh2;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        text-align: center;
         
     }
     img {
@@ -39,13 +50,15 @@
     width: 20%;
     .card {
         height: 100%;
-        background-color: $color_fondoCards;
+        background: $color_fondoCards;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+        
         img {
             width: 100%;
             padding: 5%;
         } 
         h3 {
-            @include subtitulo2;
+            @include encabezadoh3;
             text-align: center;
         }
         p {
@@ -57,8 +70,10 @@
     }
 }
 
+
 /*promociones*/
 .promociones {
+    background:  $color_fondoArticle;
     padding-bottom: 30px;
     .promociones__titulo {
         height: 40px;
@@ -66,7 +81,8 @@
         overflow: hidden;
         margin: auto;
         ul  {
-            @include subtitulo;
+            @include encabezadoh3;
+            text-align: center;
             list-style: none;
             animation: cambiar 7s infinite;
            
@@ -97,7 +113,7 @@
     margin-left: 1%;
     margin-bottom: 5%;
     h3 {
-        @include subtitulo2;
+        @include encabezadoh3;
         justify-self: start;
         align-self: center; 
     }
@@ -119,24 +135,12 @@
         align-self: center;
     }
     button {
+        @include boton;
         width: 50%;
-        background-color: #d72136;
-        border: 2px solid #d72136;
         height: 70%;
         align-self: end; 
         justify-self: end;
         border-radius: 4px;
-        a {
-            color: #efefef;
-            font-size: 15px;
-            font-family: 'fuente2';
-            text-decoration: none;
-            font-weight: bold;
-            
-            &:hover {
-                color:black ;
-            }
-        }
     }
 }
 
@@ -164,7 +168,7 @@
     100%{margin-top: 0;}
 }
     
-
+/*media query*/
 @media screen and (max-width: 576px) {
     /*rerseña*/
     .reseña {

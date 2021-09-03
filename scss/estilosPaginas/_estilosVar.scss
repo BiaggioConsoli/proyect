@@ -4,11 +4,20 @@ $color_principal:#d72136;
 $color_parrafos: whitesmoke;
 $color_fondoCards: #efefef;
 $color_fondoNav: black;
+$color_fondoBody:-webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+$color_fondoArticle:linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 
 /*Mixin*/
-@mixin titulo {
-    /*color: $color_principal;*/
-    font-size: 30px;
+
+@mixin barramenu {
+    font-family:'fuente2';
+    font-weight: bold;
+    font-size: 20px;
+    color: $color_principal;
+}
+@mixin encabezadoh1 {
+    color: $color_principal;
+    font-size: 36px;
     font-family: 'fuente3';
     font-weight: bold;
 }
@@ -19,24 +28,52 @@ $color_fondoNav: black;
     font-size: 16px;
     text-align: justify;
     line-height: 1.6;
+    
+}
+
+@mixin encabezadoh2 {
+    font-family: 'fuente3';
+    color: $color_principal;
+    font-size: 32px;
+}
+
+@mixin encabezadoh3 {
+    font-family: 'fuente3';
+    color: $color_principal;
+    font-size: 28px;
+
+}
+
+@mixin encabezadoH4 {
+    font-family: 'fuente3';
+    color: $color_principal;
+    font-size: 20px;
+}
+
+@mixin encabezadoH5 {
+    font-family: 'fuente2';
+    color: black;
+    font-size: 18px;
     font-weight: bold;
 }
 
-@mixin subtitulo {
-    font-family: 'fuente3';
-    color: $color_principal;
-    font-size: 26px;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    text-align: center;
-}
+@mixin boton {
+    background-color: #d72136;
+    border: 2px solid #d72136;
+    border-radius: 4px;
+        a {
+            color: #efefef;
+            font-size: 15px;
+            font-family: 'fuente2';
+            text-decoration: none;
+            font-weight: bold;
+            
+            &:hover {
+                color:black ;
+            }
+        }
+    }
 
-@mixin subtitulo2 {
-    font-family: 'fuente3';
-    color: $color_principal;
-    font-size: 24px;
-    text-align: center; 
-}
 
 /*if H1 reseña*/
 $color_encabezado: rojo;

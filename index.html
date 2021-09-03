@@ -8,7 +8,9 @@
         <link rel="icon" href="./imagenes/logof2f_blanco.png">
         <link rel="stylesheet" href="./css/probando.css">
         <link rel="stylesheet" href="./fonts/fonts.css">
-        <title>Fight 2 Fit</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="js/scrollreveal.js"></script>
+        <title>Fight 2 Fit / Home</title>
     </head>
     <body>
         <header>
@@ -41,11 +43,12 @@
         </header>
         <main>
             <div class="ratio ratio-16x9">
-                <video src="./videos/f2fhome.mp4" controls autoplay muted loop title="video coorporativo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></video>
+                <!--  <video src="./videos/f2fhome.mp4" controls autoplay muted loop title="video coorporativo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></video>-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_fQY08bErEE?autoplay=1&amp;loop=1&amp;mute=1&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <section>
                 <!--reseña-->
-                <article class="container-fluid bg-black reseña">
+                <article class="container-fluid reseña">
                     <div class="container">
                         <div class="reseña__info">
                             <h1>TRAIN, FIGHT, WIN, REPEAT</h1>
@@ -54,15 +57,16 @@
                             </p>
                         </div>
                 </article>
+                <!--entrenamiento-->
                 <article class="container-fluid entrenamiento">
                     <div class="container">
-                        <h2>Elige tu estilo de entrenamiento</h2>
+                        <h2 class="efectoLeft">Elige tu estilo de entrenamiento</h2>
                     </div>
                     <div class="row justify-content-center">
-                        <img src="imagenes/collage.png"  alt="">
+                        <img src="imagenes/collage.png" class="efectofront"  alt="">
                     </div>
                     <div class="container"> 
-                        <h2>En Fight 2 Fit contamos con diferentes disciplinas, lleva tu entrenamiento al límite</h2>
+                        <h2 class="efectoLeft"> En Fight 2 Fit contamos con diferentes disciplinas, lleva tu entrenamiento al límite</h2>
                     </div> 
                     <div class="row justify-content-center">
                         <div class="entrenamiento__info">
@@ -104,7 +108,7 @@
                     </div>
                 </article>
                 <!--promociones-->
-                <article class="container-fluid bg-black promociones">
+                <article class="container-fluid promociones">
                     <br>
                     <br>
                     <div class="promociones__titulo">
@@ -141,12 +145,12 @@
                     </div> 
                 </article>
             </section>
-            <footer class="piePagina">
+            <footer class="pieDePagina">
                 <div class="container" >
                     <div class="row justify-content-space-around ">
-                        <div class="col-md-3  col-xs-12 piePagina__redes">
-                            <img src="./imagenes/logof2f_blanco.png" alt="" width="60%">
-                            <div class="piePagina__redes_logos">
+                        <div class="col-md-3  col-xs-12 pieDePagina__redes">
+                            <img src="imagenes/logof2f_blanco.png" class="logoFooter" alt="" width="60%">
+                            <div class="pieDePagina__redes_logos">
                                 <a href="#"><span class="icon-instagram"></span></a>   
                                 <a href="#"><span class="icon-facebook2"></span></a> 
                                 <a href="#"><span class="icon-whatsapp"></span></a> 
@@ -154,15 +158,15 @@
                                 <a href="#"><span class="icon-twitter"></span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-xs-12 piePagina__infoContact">
+                        <div class="col-md-3 col-xs-12 pieDePagina__infoContact">
                             <h4>Contáctenos</h4>
                             <h5><span class="icon-mail2"></span> fight2fit.@gmail.com</h5> 
                             <h5><span class="icon-mobile"></span> +051 975161889</h5> 
                             <h5><span class="icon-location"></span> Jr. Nicolas Rodrigo cdra. 1, Perú</h5> 
                         </div>
-                        <div class="col-md-3  col-xs-12 piePagina__enlaces">
+                        <div class="col-md-3  col-xs-12 pieDePagina__enlaces">
                             <h4>Enlaces rápidos</h4>
-                            <div class="piePagina__enlaces_contenedor">
+                            <div class="pieDePagina__enlaces_contenedor">
                                 <div>
                                     <ul>
                                         <li><a href="#">Fotos</a></li>     
@@ -174,9 +178,9 @@
                                
                             </div>   
                         </div>
-                        <div class="col-md-3  col-xs-12 piePagina__horarios">
+                        <div class="col-md-3  col-xs-12 pieDePagina__horarios">
                             <h4>Horario de apertura</h4>
-                            <div class="piePagina__horarios_contenedor">
+                            <div class="pieDePagina__horarios_contenedor">
                                 <div>
                                     <h5>Lun - vie: 06:30 - 20:30 </h5>    
                                     <h5>Sábado: 09:00 - 13:00 </h5>      
@@ -187,7 +191,7 @@
                         </div>
                         
                     </div> 
-                    <div class="piePagina__copyright">
+                    <div class="pieDePagina__copyright">
                         <h6>©2021 Fight 2 Fit es una marca registrada / Diseño y desarrollo por Biaggio Consoli</h6>
                         <h6></h6>
                     </div>
@@ -198,5 +202,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

@@ -26,582 +26,130 @@
     src: url(../fuentes/649-font.otf);
 }
 
-/*Barramenu*/
+/*Navbar*/
 header {
-    background-color: black;
+    background: $color_fondoNav;
     position: sticky; top: 0;
     width: 100%;
-    z-index: 20;  
-}
-
-.barramenu_links a {
-    font-family: 'fuente2'; 
-    font-size: 20px;
-    color: #d72136; 
-    font-weight: bold; 
-}
-.barramenu_links a:hover{
-    color: whitesmoke;
-}
-.icon-menu {
-    color: whitesmoke;
+    z-index: 20;
+    .icon-menu {
+        color:$color_parrafos;
+    }
+    .barramenu_links {
+        a {
+            @include barramenu;
+            &:hover {
+                color: $color_parrafos;
+            }
+        }
+        
+    }  
 }
 
 /*footer*/
-.piePagina {
+.pieDePagina {
     padding-top: 3%;
     padding-bottom: 3%;
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondofot.jpg);
     background-size: cover;
-    background-position: center;   
-}
-
-.piePagina h5 {
-    font-size: 14px;
-    color: #efefef;
-    font-family:'fuente2';
-    font-weight: bold;
-    padding-top: 10px;
-    
-}
-
-.piePagina h4 {
-    font-size: 20px;
-    color: #efefef;
-    font-family:'fuente2';
-    font-weight: bold;
-}
-
-.piePagina h6 {
-    font-size: 12px;
-    font-family:'fuente2';
-    font-weight: bold;
-    color:#efefef;
-    text-align: center;
-}
-
-.piePagina__redes {
-    text-align: center;
-}
-
-.piePagina__redes_logos a {
-    text-decoration: none;
-    color: white;
-    padding: 2%;
-    font-size: 25px;
-}
-
-.piePagina__enlaces {
-    display: flex;
-    flex-direction: column;      
-}
-
-.piePagina__enlaces_contenedor {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-}
-
-.piePagina__enlaces_contenedor ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.piePagina__enlaces_contenedor a {
-    color: #efefef;
-    text-decoration: none;   
-    font-size: 14px;
-    font-family:'fuente2';
-    font-weight: bold;
-}
-
-.piePagina__enlaces_contenedor li {
-    padding-top: 10px;
-}
-
-.piePagina__horarios {
-    display: flex;
-    flex-direction: column;
-}
-.piePagina__horarios_contenedor {
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;  
-}
-
-.piePagina__copyright  {
-    margin-top: 40px;    
-}
-
-
-
-/*Index*/
-
-
-/*Disciplinas*/
-.disciplinas {
-    background-color: black;
-    padding-bottom: 30px;    
-}
-
-.disciplinas__imagen {
-    padding-bottom: 14px;
-    position: relative;
-}
-
-.disciplinas__imagen_titulo  {
-    position: absolute;
-    bottom: 0;
-    padding: 1%;
-    padding-left: 2%;
-    background: rgba(0,0,0,0.7);
-}
-
-.disciplinas__imagen_titulo h5 {
-    font-size: 40px;
-    font-family: 'fuente3';
-    color:#d72136;
-    
-}
-
-/*efecto hover sobre la imagen
-.disciplinas__imagen {
-    padding-bottom: 14px;
-    position: relative;
-    overflow: hidden;
-}
-
-.disciplinas__imagen_titulo  {
-    position: absolute;
-    bottom: 0;
-    padding: 1%;
-    padding-left: 2%;
-    background: rgba(0,0,0,0.7);
-    transform: translateY(100%);
-    transition: all 0.5s ease-out;
-}
-
-.disciplinas__imagen img:hover .disciplinas__imagen_titulo {
-    transform: translateY(0%);
-}*/
-
-.disciplinas__coach {
-    display: flex;
-    padding-bottom: 14px;
-    padding-top: 20px;
-}
-
-.disciplinas__coach_imagen {
-    width: 12%;
-}
-
-.disciplinas__coach img {
-    width: 80%;
-    padding-top: 14px;
-}
-
-.disciplinas__coach_info {
-    width: 12%;
-    border-right: 1px solid gray;
-    padding-top: 14px;
-}
-
-.disciplinas__coach p {
-    font-family: 'fuente2';
-    color: whitesmoke;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.disciplinas a {
-    color: #efefef;
-    font-size: 15px;
-    font-family: 'fuente2';
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.disciplinas a:hover {
-    color: black;
-}
-
-.disciplinas__info {
-    width: 70%;
-    margin: auto;
-    padding-top: 14px;   
-    padding-bottom: 1%;
-}
-
-.disciplinas button {
-    background-color: #d72136;
-}
-
-.disciplinas__info p {
-    font-family: 'fuente2';
-    color: whitesmoke;
-    font-size: 14px;
-    text-align: justify;
-    line-height: 1.6;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-  
-.disciplinas h2 {
-    font-family: 'fuente3';
-    color:#d72136;
-    font-size: 30px;
-    padding-bottom: 10px;
-}
-
-.disciplinas h4 {
-    font-family: 'fuente2';
-    color: #d72136;
-    font-size: 20px;
-    font-weight: bold;
-}
+    background-position: center;
+    h4 {
+        @include encabezadoH4;
+        color: #efefef;
+        font-weight: bold;
+    }
+    h5 {
+        font-size: 14px;
+        color: #efefef;
+        font-family:'fuente2';
+        font-weight: bold;
+        padding-top: 10px;  
+    }
+    h6 {
+        font-size: 12px;
+        font-family:'fuente2';
+        font-weight: bold;
+        color:#efefef;
+        text-align: center;
+    }
 
-.disciplinas__galeria_imagenes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 16px;
+    .pieDePagina__redes {
+        text-align: center;
+        .pieDePagina__redes_logos {
+            a {
+            text-decoration: none;
+            color: white;
+            padding: 2%;
+            font-size: 25px;
+            }
+        }
+    }
+    .pieDePagina__enlaces {
+        display: flex;
+        flex-direction: column;
+        .pieDePagina__enlaces_contenedor {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+            ul {
+                list-style: none;
+                padding-left: 0;
+                li {
+                    padding-top: 10px;
+                    a {
+                        color: #efefef;
+                        text-decoration: none;   
+                        font-size: 14px;
+                        font-family:'fuente2';
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .pieDePagina__horarios {
+        display: flex;
+        flex-direction: column;
+        .pieDePagina__horarios_contenedor {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;  
+        }
+    }
+    .pieDePagina__copyright {
+        margin-top: 40px;    
+    }
 }
 
-.disciplinas__galeria_imagenes img {
-    width: 100%;
-    border-radius: 8px;     
-}
-
-
-
-.cont {
-    width: 32%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    
-}
-
-.disciplina__btn {
-    display: flex;
-    justify-content: space-between;
-    background-color: #252527;
-    height: 80px;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.disciplinas__btn_contenedor {
-    width: 70%;
-}
-
-.disciplinas__btn_contenedor h5 {
-    color: #efefef;
-    padding-left: 20px;
-}
-
-/*efecto para que se agranden al pasar al mouse
-.disciplinas__galeria_imagenes img:hover {
-    transform: scale(1.5);
-    z-index: 3;
-}*/
-
-/*Staff*/
-.staffEncabezado {
-    width: 100%;
-    background-color: black;
-    height: 495px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
-}
-
-.stattEncabezado__slider {
-    width: 70%;
-    height: 400px;
-    animation: banner 6s infinite linear alternate;
-    background-size: 100% 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
-}
-.staff h2 {
-    font-family: 'fuente3';
-    color:#d72136;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%; 
-}
-
-.staff__profesores {
-    width: 70%;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;  
-    margin-bottom: 5%;
-}
-
-.staff__profesoresInfo {
-    background-color: black;
-    width: 22%;
-    border-radius: 8px;  
-    box-shadow: 0 2px 2px darkgray; 
-    transition: all 0.25s;
-}
-
-.staff__profesoresInfo:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px darkgray ;
-}
-
-.staff__profesoresInfo h3 {
-    font-family: 'fuente3';
-    color: #d72136;
-    font-size: 20px;
-    padding-left: 8%;
-    line-height: 1.6;
-}
-
-.staff__profesoresInfo h4 {
-    font-family: 'fuente3';
-    color: #d72136;
-    font-size: 16px;
-    line-height: 1.6;
-    padding-left: 8%;
-}
-
-.staff__profesoresInfo ul {
-    padding-right: 8%;
-    padding-left: 8%;
-    padding-bottom: 5%;
-} 
-.staff__profesoresInfo li {
-    font-family: 'fuente2';
-    color: #efefef;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.staff__profesoresInfo_imagen {
-    text-align: center;
-}
-
-.staff__profesoresInfo_imagen img {
-    width: 90%;
-    margin-top: 5%;
-}
 
-.staff {
-    padding-bottom: 10%;
-}
-
-/* PAGINA MEMBRESIAS*/
-.titulo_membresias {
-    width: 70%;
-    margin: auto;
-    text-align: center;    
-}
-
-.titulo_membresias h2 {
-    font-family: 'fuente3';
-    color:#d72136;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.membresias {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.membresias__contenedor {
-    width: 20%;
-    background-image: linear-gradient(to bottom, grey, black);
-    padding: 2%;
-    margin-bottom: 2%;
-    border-radius: 8px;
-}
-
-.membresias__contenedor_imagen img {
-    width: 100%;
-}
 
-.membresias h2 {
-    font-family: 'fuente3';
-    color:#d72136;
-    font-size: 25px;
-    padding-bottom: 1%;   
-}
 
-.membresias h3 {
-    font-family: 'fuente2';
-    color:#d72136;
-    font-size: 20px;
-}
 
-.membresias li {
-    font-family: 'fuente2';
-    color: #efefef;
-    font-size: 14px;
-    line-height: 1.6;
-}
 
-.membresias p {
-    font-family: 'fuente2';
-    color: whitesmoke;
-    font-size: 18px;
-    text-align: justify;
-    line-height: 1.6;
-    font-weight: bold;
-}
 
-.membresiasPromociones {
-    width: 70%;
-    margin: auto;
-    padding-bottom: 10%;
-}
 
-.membresiasPromociones__mes{
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    border-radius: 8px;
-}
 
-.membresiasPromociones__mes img {
-    width: 30%;
-    padding: 3% 1%; 
-}
 
 
-/*PAGINA CONTACTO*/
-/*Formulario*/
-.contacto {
-    width: 70%;
-    margin: auto;
-    background-color: black;
-    display: flex;
-    margin-top: 2.5%;
-    margin-bottom: 10%;
-}
 
-.contacto__formulario {
-    width: 50%; 
-}
 
-.contacto__formulario h2 {
-    font-family: 'fuente2'; 
-    color: #efefef;
-    font-size: 20px;
-    width: 80%;
-    margin: auto;
-    padding-top: 8%;
-    line-height: 1.6;
-}
 
-.contacto__formulario form {
-    width: 80%;
-    margin: auto;   
-}
 
-fieldset   {
-    width: 90%;
-    padding: 6%;
-    margin-top: 2%;
-}
 
-fieldset legend {
-    color:#d72136;
-    font-family: 'fuente2';
-    font-size: 20px;
-    padding-bottom: 2%;
-}
-fieldset label {
-    color:white;
-    font-family: 'fuente2';
-    font-size: 15px;
-}
 
-.btn_form input {
-    background-color: whitesmoke;
-    margin-right: 10px;
-    padding: 5px;
-    font-family: 'fuente2';
-    box-shadow: 0px 2px 0px #d72136;
-}
 
-.btn_form input:hover {
-    box-shadow: 0px 3px 0px ;
-    padding-top: 6px;
-}
 
-/*Información de contacto*/
-.contacto__contenedor {
-    width: 50%;
-    background-color: black;
-}
 
-.contacto__contenedor_info {
-    width: 80%;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
 
-}
 
-.contacto__contenedor_info h3 {
-    font-family: 'fuente2'; 
-    color: #d72136;
-    font-size: 25px;
-    line-height: 1.6;
-}
-.contacto__contenedor_info h4 {
-    font-family: 'fuente2'; 
-    color: white;
-    font-size: 18px;
-    line-height: 1.6;
-}
 
-.contacto__contenedor_info p {
-    font-family: 'fuente2'; 
-    color: white;
-    font-size: 16px;
-    line-height: 1.6;
-    padding-top: 2%;
-}
 
-.contacto__contenedor_info p span {
-    color: #d72136;
-    padding-right: 1%;
-}
 
-.contacto__contenedor_info img {
-    width: 100%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-/* ------------------------------------------------ */
 
 
 
 
-@keyframes banner {
-    0%,45% {
-        background-image: url(../imagenes/staff.png);}
-    50%,100% {
-        background-image: url(../imagenes/portada-03.png);}      
-} 
 
- /*entrenamiento*/
  
 
     

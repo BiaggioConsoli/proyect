@@ -1,0 +1,63 @@
+@import "estilosPaginas/estilosVar";
+
+body {
+    background: $color_fondoBody;
+}
+.membresia {
+    background: $color_fondoArticle;
+    padding-bottom: 50px;
+    margin: 0 ;
+
+    .membresia__titulo {
+        margin: auto;
+        text-align: center;
+        h2 {
+            @include encabezadoh2;
+            margin-top: 2%;
+            margin-bottom: 3%;
+        }   
+    }
+    .membresia__disciplina {
+        width: 38%;
+        padding: 1%;
+        margin-bottom: 2%;
+        margin-left: 1%;
+        margin-right: 1%;
+        border: 1px solid #efefef;
+        border-radius: 8px;
+        img {
+            width: 100%;
+        }
+        figure {
+            background: $color_fondoCards;
+            img {
+                width: 100%;
+            }
+            figcaption {
+                background: $color_fondoCards;
+                h3 {
+                    @include encabezadoh3;
+                }
+                p {
+                    @include parrafo;
+                    color: black;
+                }
+                h4 {
+                    @include encabezadoH4;
+                }
+                ul {
+                    li {
+                        @include parrafo;
+                        color: black;
+                    }
+                } 
+            }   
+        }
+    }
+}
+
+
+
+
+
+

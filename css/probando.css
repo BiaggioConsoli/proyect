@@ -1,16 +1,29 @@
 @charset "UTF-8";
 /*Variables*/
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /*Mixin*/
 /*if H1 reseña*/
+body {
+  background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6); }
+
 /*rerseña*/
 .reseña {
+  background: linear-gradient(to top, #434343, #000000);
   padding-top: 2%;
   padding-bottom: 2%; }
   .reseña .reseña__info h1 {
-    color: #d72136;
+    /*@if ($color_encabezado == rojo) {
+            color: $color_principal;
+        } @else if ($color_encabezado == negro) {
+            color: $color_fondoNav;
+        } @else if ($color_encabezado == gris) {
+            color: $color_fondoCards;
+        } @else {
+            color: blue;
+        }*/
     text-align: center;
-    /*color: $color_principal;*/
-    font-size: 30px;
+    color: #d72136;
+    font-size: 36px;
     font-family: 'fuente3';
     font-weight: bold; }
   .reseña .reseña__info p {
@@ -19,8 +32,8 @@
     font-size: 16px;
     text-align: justify;
     line-height: 1.6;
-    font-weight: bold;
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }
 
 /*entrenamiento*/
 .entrenamiento {
@@ -28,7 +41,7 @@
   .entrenamiento h2 {
     font-family: 'fuente3';
     color: #d72136;
-    font-size: 26px;
+    font-size: 32px;
     margin-top: 2%;
     margin-bottom: 2%;
     text-align: center; }
@@ -39,15 +52,15 @@
   width: 20%; }
   .entrenamiento__info .card {
     height: 100%;
-    background-color: #efefef; }
+    background: #efefef;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25); }
     .entrenamiento__info .card img {
       width: 100%;
       padding: 5%; }
     .entrenamiento__info .card h3 {
       font-family: 'fuente3';
       color: #d72136;
-      font-size: 24px;
-      text-align: center;
+      font-size: 28px;
       text-align: center; }
     .entrenamiento__info .card p {
       font-family: 'fuente2';
@@ -55,12 +68,12 @@
       font-size: 16px;
       text-align: justify;
       line-height: 1.6;
-      font-weight: bold;
       color: black;
       padding: 3%; }
 
 /*promociones*/
 .promociones {
+  background: linear-gradient(to top, #434343, #000000);
   padding-bottom: 30px; }
   .promociones .promociones__titulo {
     height: 40px;
@@ -70,9 +83,7 @@
     .promociones .promociones__titulo ul {
       font-family: 'fuente3';
       color: #d72136;
-      font-size: 26px;
-      margin-top: 2%;
-      margin-bottom: 2%;
+      font-size: 28px;
       text-align: center;
       list-style: none;
       animation: cambiar 7s infinite; }
@@ -96,8 +107,7 @@
   .promociones__info h3 {
     font-family: 'fuente3';
     color: #d72136;
-    font-size: 24px;
-    text-align: center;
+    font-size: 28px;
     justify-self: start;
     align-self: center; }
   .promociones__info h4 {
@@ -115,9 +125,10 @@
     justify-self: end;
     align-self: center; }
   .promociones__info button {
-    width: 50%;
     background-color: #d72136;
     border: 2px solid #d72136;
+    border-radius: 4px;
+    width: 50%;
     height: 70%;
     align-self: end;
     justify-self: end;
@@ -155,6 +166,7 @@
   100% {
     margin-top: 0; } }
 
+/*media query*/
 @media screen and (max-width: 576px) {
   /*rerseña*/
   .reseña {
@@ -194,6 +206,397 @@
       font-size: 12px; } }
 
 /*Variables*/
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*Mixin*/
+/*if H1 reseña*/
+body {
+  background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6); }
+
+.disciplinas {
+  background: linear-gradient(to top, #434343, #000000);
+  padding-bottom: 60px; }
+  .disciplinas .disciplinas__imagen {
+    padding-bottom: 14px;
+    position: relative; }
+    .disciplinas .disciplinas__imagen img {
+      padding: 0;
+      margin-top: 50px; }
+    .disciplinas .disciplinas__imagen .disciplinas__imagen_titulo {
+      position: absolute;
+      bottom: 0;
+      padding: 1%;
+      padding-left: 2%;
+      background: rgba(0, 0, 0, 0.5); }
+      .disciplinas .disciplinas__imagen .disciplinas__imagen_titulo h1 {
+        color: #d72136;
+        font-size: 36px;
+        font-family: 'fuente3';
+        font-weight: bold; }
+  .disciplinas .disciplinas__coach {
+    display: flex;
+    padding-bottom: 14px;
+    padding-top: 20px; }
+    .disciplinas .disciplinas__coach .disciplinas__coach_imagen {
+      width: 12%; }
+      .disciplinas .disciplinas__coach .disciplinas__coach_imagen img {
+        width: 80%;
+        border-radius: 8px; }
+    .disciplinas .disciplinas__coach .disciplinas__coach_info {
+      width: 12%;
+      border-right: 1px solid gray;
+      padding-top: 14px; }
+      .disciplinas .disciplinas__coach .disciplinas__coach_info h3 {
+        font-family: 'fuente3';
+        color: #d72136;
+        font-size: 28px; }
+      .disciplinas .disciplinas__coach .disciplinas__coach_info p {
+        font-family: 'fuente2';
+        color: whitesmoke;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.6; }
+      .disciplinas .disciplinas__coach .disciplinas__coach_info button {
+        background-color: #d72136;
+        border: 2px solid #d72136;
+        border-radius: 4px; }
+        .disciplinas .disciplinas__coach .disciplinas__coach_info button a {
+          color: #efefef;
+          font-size: 15px;
+          font-family: 'fuente2';
+          text-decoration: none;
+          font-weight: bold; }
+          .disciplinas .disciplinas__coach .disciplinas__coach_info button a:hover {
+            color: black; }
+    .disciplinas .disciplinas__coach .disciplinas__info {
+      width: 70%;
+      margin: auto;
+      padding-top: 14px;
+      padding-bottom: 1%; }
+      .disciplinas .disciplinas__coach .disciplinas__info p {
+        font-family: 'fuente2';
+        color: whitesmoke;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.6; }
+  .disciplinas .disciplinas__galeria h2 {
+    font-family: 'fuente3';
+    color: #d72136;
+    font-size: 32px; }
+  .disciplinas .disciplinas__galeria .disciplinas__galeria_imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 16px; }
+    .disciplinas .disciplinas__galeria .disciplinas__galeria_imagenes img {
+      width: 100%;
+      border-radius: 8px; }
+    .disciplinas .disciplinas__galeria .disciplinas__galeria_imagenes .cont {
+      width: 32%;
+      padding-top: 1%;
+      padding-bottom: 1%; }
+  .disciplinas .disciplina__reserva {
+    display: flex;
+    justify-content: space-between;
+    background-color: #252527;
+    height: 100px;
+    align-items: center;
+    border-radius: 8px; }
+    .disciplinas .disciplina__reserva .disciplinas__reserva_info {
+      width: 70%; }
+      .disciplinas .disciplina__reserva .disciplinas__reserva_info h3 {
+        font-family: 'fuente3';
+        color: #d72136;
+        font-size: 28px;
+        padding-left: 20px; }
+    .disciplinas .disciplina__reserva .disciplina__reserva_boton {
+      padding-right: 20px; }
+      .disciplinas .disciplina__reserva .disciplina__reserva_boton button {
+        background-color: #d72136;
+        border: 2px solid #d72136;
+        border-radius: 4px; }
+        .disciplinas .disciplina__reserva .disciplina__reserva_boton button a {
+          color: #efefef;
+          font-size: 15px;
+          font-family: 'fuente2';
+          text-decoration: none;
+          font-weight: bold; }
+          .disciplinas .disciplina__reserva .disciplina__reserva_boton button a:hover {
+            color: black; }
+
+/*Variables*/
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*Mixin*/
+/*if H1 reseña*/
+body {
+  background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6); }
+
+.staff .staffEncabezado {
+  background: linear-gradient(to top, #434343, #000000);
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.staff h2 {
+  font-family: 'fuente3';
+  color: #d72136;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+
+.staff .staff__profesores {
+  margin-bottom: 5%; }
+  .staff .staff__profesores .staff__profesoresInfo {
+    width: 20%; }
+    .staff .staff__profesores .staff__profesoresInfo .card {
+      background: #efefef;
+      height: 100%;
+      border-radius: 8px;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+      transition: all 0.25s; }
+      .staff .staff__profesores .staff__profesoresInfo .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 12px 12px 10px 0px darkgray; }
+      .staff .staff__profesores .staff__profesoresInfo .card img {
+        width: 100%;
+        padding: 5% 5% 0 5%; }
+      .staff .staff__profesores .staff__profesoresInfo .card h3 {
+        font-family: 'fuente3';
+        color: #d72136;
+        font-size: 28px;
+        text-align: center; }
+      .staff .staff__profesores .staff__profesoresInfo .card ul li {
+        font-family: 'fuente2';
+        color: whitesmoke;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.6;
+        color: black; }
+
+/* Efecto carousel sin bootstrap
+.staffEncabezado__slider {
+    animation: banner 6s infinite linear alternate;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+@keyframes banner {
+    0%,45% {
+        background-image: url(../imagenes/staff.png);}
+    50%,100% {
+        background-image: url(../imagenes/portada-03.png);}      
+} */
+/*Variables*/
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*Mixin*/
+/*if H1 reseña*/
+body {
+  background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6); }
+
+.membresia {
+  background: linear-gradient(to top, #434343, #000000);
+  padding-bottom: 50px;
+  margin: 0; }
+  .membresia .membresia__titulo {
+    margin: auto;
+    text-align: center; }
+    .membresia .membresia__titulo h2 {
+      font-family: 'fuente3';
+      color: #d72136;
+      font-size: 32px;
+      margin-top: 2%;
+      margin-bottom: 3%; }
+  .membresia .membresia__disciplina {
+    width: 38%;
+    padding: 1%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid #efefef;
+    border-radius: 8px; }
+    .membresia .membresia__disciplina img {
+      width: 100%; }
+    .membresia .membresia__disciplina figure {
+      background: #efefef; }
+      .membresia .membresia__disciplina figure img {
+        width: 100%; }
+      .membresia .membresia__disciplina figure figcaption {
+        background: #efefef; }
+        .membresia .membresia__disciplina figure figcaption h3 {
+          font-family: 'fuente3';
+          color: #d72136;
+          font-size: 28px; }
+        .membresia .membresia__disciplina figure figcaption p {
+          font-family: 'fuente2';
+          color: whitesmoke;
+          font-size: 16px;
+          text-align: justify;
+          line-height: 1.6;
+          color: black; }
+        .membresia .membresia__disciplina figure figcaption h4 {
+          font-family: 'fuente3';
+          color: #d72136;
+          font-size: 20px; }
+        .membresia .membresia__disciplina figure figcaption ul li {
+          font-family: 'fuente2';
+          color: whitesmoke;
+          font-size: 16px;
+          text-align: justify;
+          line-height: 1.6;
+          color: black; }
+
+/*Variables*/
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*Mixin*/
+/*if H1 reseña*/
+body {
+  background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6); }
+
+.contacto {
+  background: linear-gradient(to top, #434343, #000000);
+  padding-bottom: 5%; }
+  .contacto .contacto__imagen {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .contacto .contacto__info {
+    width: 100%;
+    display: flex; }
+    .contacto .contacto__info .contacto__info_datos {
+      width: 40%;
+      display: flex;
+      flex-direction: column; }
+      .contacto .contacto__info .contacto__info_datos h3 {
+        font-family: 'fuente3';
+        color: #d72136;
+        font-size: 28px; }
+      .contacto .contacto__info .contacto__info_datos p {
+        font-family: 'fuente2';
+        color: whitesmoke;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.6; }
+        .contacto .contacto__info .contacto__info_datos p span {
+          color: #d72136;
+          padding-right: 1%; }
+      .contacto .contacto__info .contacto__info_datos a img {
+        width: 80%;
+        margin-top: 1%;
+        margin-bottom: 3%; }
+    .contacto .contacto__info .contacto__info_form {
+      width: 40%; }
+      .contacto .contacto__info .contacto__info_form h4 {
+        font-family: 'fuente3';
+        color: #d72136;
+        font-size: 20px; }
+      .contacto .contacto__info .contacto__info_form form fieldset legend {
+        font-family: 'fuente3';
+        color: #d72136;
+        font-size: 20px;
+        font-family: 'fuente2'; }
+      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos {
+        padding: 1%; }
+        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos label {
+          font-family: 'fuente2';
+          color: whitesmoke;
+          font-size: 16px;
+          text-align: justify;
+          line-height: 1.6;
+          font-weight: bold;
+          padding-right: 1%; }
+      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton {
+        background-color: #d72136;
+        border: 2px solid #d72136;
+        border-radius: 4px;
+        width: 28%;
+        margin: 1%;
+        border-radius: 4px; }
+        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton a {
+          color: #efefef;
+          font-size: 15px;
+          font-family: 'fuente2';
+          text-decoration: none;
+          font-weight: bold; }
+          .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton a:hover {
+            color: black; }
+        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton:hover {
+          box-shadow: 0px 3px 0px;
+          padding-top: 3px; }
+
+/*
+.btn_form input {
+    background-color: whitesmoke;
+    margin-right: 10px;
+    padding: 5px;
+    font-family: 'fuente2';
+    box-shadow: 0px 2px 0px #d72136;
+}
+
+.btn_form input:hover {
+    box-shadow: 0px 3px 0px ;
+    padding-top: 6px;
+}
+*/
+/*
+.formulario {
+    display: flex;
+    min-height: 100vh;
+    .form {
+        background: $color_fondoCards;
+        margin: auto;
+        width: 90%;
+        max-width: 400px;
+        padding: 3%;
+        border-radius: 8px;
+        .form__titulo {
+            @include encabezadoH5;
+            margin-bottom: 5%;
+        }
+        .form__contenedor {
+            display: grid;
+            gap: 5%;
+            .form__grupo {
+                position: relative;
+                --color: blue;
+                .form__input {
+                    width: 100%;
+                    background: none;
+                    color: gray;
+                    font-size: 18px;
+                    padding: 1%;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid var(--color);
+                    font-family: 'fuente2';
+                
+                    &:focus + .form__label, .form__input:not(:placeholder-shown) + .form__label {
+                        transform: translateY(-12px) scale(.7);
+                        transform-origin: left top;
+                    }
+
+                    /*&:not(:placeholder-shown) + .form__label{
+                    transform: translateY(-12px) scale(.7);
+                    transform-origin: left top;
+                    }*
+                }
+                .form__label {
+                    color: var(--color);
+                    
+                    position: absolute;
+                    font-family: 'fuente2';
+                    top: 0;
+                    left: 5px;
+                    transform: translateY(10px);
+                    transition: transform .5s, color .3s;
+                } 
+            }
+
+        }
+    }
+}
+*/
+/*Variables*/
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /*Mixin*/
 /*if H1 reseña*/
 /* Reseteo de estilos */
@@ -214,486 +617,79 @@
   font-family: 'fuente3';
   src: url(../fuentes/649-font.otf); }
 
-/*Barramenu*/
+/*Navbar*/
 header {
-  background-color: black;
+  background: black;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 20; }
-
-.barramenu_links a {
-  font-family: 'fuente2';
-  font-size: 20px;
-  color: #d72136;
-  font-weight: bold; }
-
-.barramenu_links a:hover {
-  color: whitesmoke; }
-
-.icon-menu {
-  color: whitesmoke; }
+  header .icon-menu {
+    color: whitesmoke; }
+  header .barramenu_links a {
+    font-family: 'fuente2';
+    font-weight: bold;
+    font-size: 20px;
+    color: #d72136; }
+    header .barramenu_links a:hover {
+      color: whitesmoke; }
 
 /*footer*/
-.piePagina {
+.pieDePagina {
   padding-top: 3%;
   padding-bottom: 3%;
   background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondofot.jpg);
   background-size: cover;
   background-position: center; }
-
-.piePagina h5 {
-  font-size: 14px;
-  color: #efefef;
-  font-family: 'fuente2';
-  font-weight: bold;
-  padding-top: 10px; }
-
-.piePagina h4 {
-  font-size: 20px;
-  color: #efefef;
-  font-family: 'fuente2';
-  font-weight: bold; }
-
-.piePagina h6 {
-  font-size: 12px;
-  font-family: 'fuente2';
-  font-weight: bold;
-  color: #efefef;
-  text-align: center; }
-
-.piePagina__redes {
-  text-align: center; }
-
-.piePagina__redes_logos a {
-  text-decoration: none;
-  color: white;
-  padding: 2%;
-  font-size: 25px; }
-
-.piePagina__enlaces {
-  display: flex;
-  flex-direction: column; }
-
-.piePagina__enlaces_contenedor {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.piePagina__enlaces_contenedor ul {
-  list-style: none;
-  padding-left: 0; }
-
-.piePagina__enlaces_contenedor a {
-  color: #efefef;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: 'fuente2';
-  font-weight: bold; }
-
-.piePagina__enlaces_contenedor li {
-  padding-top: 10px; }
-
-.piePagina__horarios {
-  display: flex;
-  flex-direction: column; }
-
-.piePagina__horarios_contenedor {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.piePagina__copyright {
-  margin-top: 40px; }
-
-/*Index*/
-/*Disciplinas*/
-.disciplinas {
-  background-color: black;
-  padding-bottom: 30px; }
-
-.disciplinas__imagen {
-  padding-bottom: 14px;
-  position: relative; }
-
-.disciplinas__imagen_titulo {
-  position: absolute;
-  bottom: 0;
-  padding: 1%;
-  padding-left: 2%;
-  background: rgba(0, 0, 0, 0.7); }
-
-.disciplinas__imagen_titulo h5 {
-  font-size: 40px;
-  font-family: 'fuente3';
-  color: #d72136; }
-
-/*efecto hover sobre la imagen
-.disciplinas__imagen {
-    padding-bottom: 14px;
-    position: relative;
-    overflow: hidden;
-}
-
-.disciplinas__imagen_titulo  {
-    position: absolute;
-    bottom: 0;
-    padding: 1%;
-    padding-left: 2%;
-    background: rgba(0,0,0,0.7);
-    transform: translateY(100%);
-    transition: all 0.5s ease-out;
-}
-
-.disciplinas__imagen img:hover .disciplinas__imagen_titulo {
-    transform: translateY(0%);
-}*/
-.disciplinas__coach {
-  display: flex;
-  padding-bottom: 14px;
-  padding-top: 20px; }
-
-.disciplinas__coach_imagen {
-  width: 12%; }
-
-.disciplinas__coach img {
-  width: 80%;
-  padding-top: 14px; }
-
-.disciplinas__coach_info {
-  width: 12%;
-  border-right: 1px solid gray;
-  padding-top: 14px; }
-
-.disciplinas__coach p {
-  font-family: 'fuente2';
-  color: whitesmoke;
-  font-size: 14px;
-  font-weight: bold; }
-
-.disciplinas a {
-  color: #efefef;
-  font-size: 15px;
-  font-family: 'fuente2';
-  text-decoration: none;
-  font-weight: bold; }
-
-.disciplinas a:hover {
-  color: black; }
-
-.disciplinas__info {
-  width: 70%;
-  margin: auto;
-  padding-top: 14px;
-  padding-bottom: 1%; }
-
-.disciplinas button {
-  background-color: #d72136; }
-
-.disciplinas__info p {
-  font-family: 'fuente2';
-  color: whitesmoke;
-  font-size: 14px;
-  text-align: justify;
-  line-height: 1.6;
-  font-weight: bold;
-  padding-bottom: 10px; }
-
-.disciplinas h2 {
-  font-family: 'fuente3';
-  color: #d72136;
-  font-size: 30px;
-  padding-bottom: 10px; }
-
-.disciplinas h4 {
-  font-family: 'fuente2';
-  color: #d72136;
-  font-size: 20px;
-  font-weight: bold; }
-
-.disciplinas__galeria_imagenes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 16px; }
-
-.disciplinas__galeria_imagenes img {
-  width: 100%;
-  border-radius: 8px; }
-
-.cont {
-  width: 32%;
-  padding-top: 1%;
-  padding-bottom: 1%; }
-
-.disciplina__btn {
-  display: flex;
-  justify-content: space-between;
-  background-color: #252527;
-  height: 80px;
-  align-items: center;
-  margin-bottom: 50px; }
-
-.disciplinas__btn_contenedor {
-  width: 70%; }
-
-.disciplinas__btn_contenedor h5 {
-  color: #efefef;
-  padding-left: 20px; }
-
-/*efecto para que se agranden al pasar al mouse
-.disciplinas__galeria_imagenes img:hover {
-    transform: scale(1.5);
-    z-index: 3;
-}*/
-/*Staff*/
-.staffEncabezado {
-  width: 100%;
-  background-color: black;
-  height: 495px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: auto; }
-
-.stattEncabezado__slider {
-  width: 70%;
-  height: 400px;
-  animation: banner 6s infinite linear alternate;
-  background-size: 100% 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: auto; }
-
-.staff h2 {
-  font-family: 'fuente3';
-  color: #d72136;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 2%; }
-
-.staff__profesores {
-  width: 70%;
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
-  margin-bottom: 5%; }
-
-.staff__profesoresInfo {
-  background-color: black;
-  width: 22%;
-  border-radius: 8px;
-  box-shadow: 0 2px 2px darkgray;
-  transition: all 0.25s; }
-
-.staff__profesoresInfo:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px darkgray; }
-
-.staff__profesoresInfo h3 {
-  font-family: 'fuente3';
-  color: #d72136;
-  font-size: 20px;
-  padding-left: 8%;
-  line-height: 1.6; }
-
-.staff__profesoresInfo h4 {
-  font-family: 'fuente3';
-  color: #d72136;
-  font-size: 16px;
-  line-height: 1.6;
-  padding-left: 8%; }
-
-.staff__profesoresInfo ul {
-  padding-right: 8%;
-  padding-left: 8%;
-  padding-bottom: 5%; }
-
-.staff__profesoresInfo li {
-  font-family: 'fuente2';
-  color: #efefef;
-  font-size: 14px;
-  line-height: 1.6; }
-
-.staff__profesoresInfo_imagen {
-  text-align: center; }
-
-.staff__profesoresInfo_imagen img {
-  width: 90%;
-  margin-top: 5%; }
-
-.staff {
-  padding-bottom: 10%; }
-
-/* PAGINA MEMBRESIAS*/
-.titulo_membresias {
-  width: 70%;
-  margin: auto;
-  text-align: center; }
-
-.titulo_membresias h2 {
-  font-family: 'fuente3';
-  color: #d72136;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 2%; }
-
-.membresias {
-  width: 70%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between; }
-
-.membresias__contenedor {
-  width: 20%;
-  background-image: linear-gradient(to bottom, grey, black);
-  padding: 2%;
-  margin-bottom: 2%;
-  border-radius: 8px; }
-
-.membresias__contenedor_imagen img {
-  width: 100%; }
-
-.membresias h2 {
-  font-family: 'fuente3';
-  color: #d72136;
-  font-size: 25px;
-  padding-bottom: 1%; }
-
-.membresias h3 {
-  font-family: 'fuente2';
-  color: #d72136;
-  font-size: 20px; }
-
-.membresias li {
-  font-family: 'fuente2';
-  color: #efefef;
-  font-size: 14px;
-  line-height: 1.6; }
-
-.membresias p {
-  font-family: 'fuente2';
-  color: whitesmoke;
-  font-size: 18px;
-  text-align: justify;
-  line-height: 1.6;
-  font-weight: bold; }
-
-.membresiasPromociones {
-  width: 70%;
-  margin: auto;
-  padding-bottom: 10%; }
-
-.membresiasPromociones__mes {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-  border-radius: 8px; }
-
-.membresiasPromociones__mes img {
-  width: 30%;
-  padding: 3% 1%; }
-
-/*PAGINA CONTACTO*/
-/*Formulario*/
-.contacto {
-  width: 70%;
-  margin: auto;
-  background-color: black;
-  display: flex;
-  margin-top: 2.5%;
-  margin-bottom: 10%; }
-
-.contacto__formulario {
-  width: 50%; }
-
-.contacto__formulario h2 {
-  font-family: 'fuente2';
-  color: #efefef;
-  font-size: 20px;
-  width: 80%;
-  margin: auto;
-  padding-top: 8%;
-  line-height: 1.6; }
-
-.contacto__formulario form {
-  width: 80%;
-  margin: auto; }
-
-fieldset {
-  width: 90%;
-  padding: 6%;
-  margin-top: 2%; }
-
-fieldset legend {
-  color: #d72136;
-  font-family: 'fuente2';
-  font-size: 20px;
-  padding-bottom: 2%; }
-
-fieldset label {
-  color: white;
-  font-family: 'fuente2';
-  font-size: 15px; }
-
-.btn_form input {
-  background-color: whitesmoke;
-  margin-right: 10px;
-  padding: 5px;
-  font-family: 'fuente2';
-  box-shadow: 0px 2px 0px #d72136; }
-
-.btn_form input:hover {
-  box-shadow: 0px 3px 0px;
-  padding-top: 6px; }
-
-/*Información de contacto*/
-.contacto__contenedor {
-  width: 50%;
-  background-color: black; }
-
-.contacto__contenedor_info {
-  width: 80%;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%; }
-
-.contacto__contenedor_info h3 {
-  font-family: 'fuente2';
-  color: #d72136;
-  font-size: 25px;
-  line-height: 1.6; }
-
-.contacto__contenedor_info h4 {
-  font-family: 'fuente2';
-  color: white;
-  font-size: 18px;
-  line-height: 1.6; }
-
-.contacto__contenedor_info p {
-  font-family: 'fuente2';
-  color: white;
-  font-size: 16px;
-  line-height: 1.6;
-  padding-top: 2%; }
-
-.contacto__contenedor_info p span {
-  color: #d72136;
-  padding-right: 1%; }
-
-.contacto__contenedor_info img {
-  width: 100%;
-  margin-top: 2%;
-  margin-bottom: 2%; }
-
-/* ------------------------------------------------ */
-@keyframes banner {
-  0%, 45% {
-    background-image: url(../imagenes/staff.png); }
-  50%, 100% {
-    background-image: url(../imagenes/portada-03.png); } }
-
-/*entrenamiento*/
+  .pieDePagina h4 {
+    font-family: 'fuente3';
+    color: #d72136;
+    font-size: 20px;
+    color: #efefef;
+    font-weight: bold; }
+  .pieDePagina h5 {
+    font-size: 14px;
+    color: #efefef;
+    font-family: 'fuente2';
+    font-weight: bold;
+    padding-top: 10px; }
+  .pieDePagina h6 {
+    font-size: 12px;
+    font-family: 'fuente2';
+    font-weight: bold;
+    color: #efefef;
+    text-align: center; }
+  .pieDePagina .pieDePagina__redes {
+    text-align: center; }
+    .pieDePagina .pieDePagina__redes .pieDePagina__redes_logos a {
+      text-decoration: none;
+      color: white;
+      padding: 2%;
+      font-size: 25px; }
+  .pieDePagina .pieDePagina__enlaces {
+    display: flex;
+    flex-direction: column; }
+    .pieDePagina .pieDePagina__enlaces .pieDePagina__enlaces_contenedor {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .pieDePagina .pieDePagina__enlaces .pieDePagina__enlaces_contenedor ul {
+        list-style: none;
+        padding-left: 0; }
+        .pieDePagina .pieDePagina__enlaces .pieDePagina__enlaces_contenedor ul li {
+          padding-top: 10px; }
+          .pieDePagina .pieDePagina__enlaces .pieDePagina__enlaces_contenedor ul li a {
+            color: #efefef;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: 'fuente2';
+            font-weight: bold; }
+  .pieDePagina .pieDePagina__horarios {
+    display: flex;
+    flex-direction: column; }
+    .pieDePagina .pieDePagina__horarios .pieDePagina__horarios_contenedor {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+  .pieDePagina .pieDePagina__copyright {
+    margin-top: 40px; }

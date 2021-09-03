@@ -1,0 +1,105 @@
+@import "estilosPaginas/estilosVar";
+
+body {
+    background: $color_fondoBody;
+}
+
+
+.disciplinas {
+    background: $color_fondoArticle;
+    padding-bottom: 60px;
+    .disciplinas__imagen {
+        padding-bottom: 14px;
+        position: relative;
+        img {
+            padding: 0;
+            margin-top: 50px;
+        }
+        .disciplinas__imagen_titulo {
+            position: absolute;
+            bottom: 0;
+            padding: 1%;
+            padding-left: 2%;
+            background: rgba(0,0,0,0.5);
+            h1 {
+                @include encabezadoh1;
+            }
+        }  
+    }
+    .disciplinas__coach {
+        display: flex;
+        padding-bottom: 14px;
+        padding-top: 20px;
+        .disciplinas__coach_imagen {
+            width: 12%;
+            img {
+                width: 80%;
+                border-radius: 8px;
+            }
+        }
+        .disciplinas__coach_info {
+            width: 12%;
+            border-right: 1px solid gray;
+            padding-top: 14px;
+            h3 {
+                @include encabezadoh3;
+            }
+            p {
+                @include parrafo;
+            }
+            button {
+                @include boton;
+            }
+        }
+        .disciplinas__info {
+            width: 70%;
+            margin: auto;
+            padding-top: 14px;   
+            padding-bottom: 1%;
+            p {
+                @include parrafo;
+            }
+        }
+    }
+    .disciplinas__galeria {
+        h2 {
+            @include encabezadoh2;
+        }
+        .disciplinas__galeria_imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            img {
+                width: 100%;
+                border-radius: 8px;     
+            }
+            .cont {
+                width: 32%;
+                padding-top: 1%;
+                padding-bottom: 1%;   
+            }
+        }
+    }
+    .disciplina__reserva {
+        display: flex;
+        justify-content: space-between;
+        background-color: #252527;
+        height: 100px;
+        align-items: center;
+        border-radius: 8px;
+        .disciplinas__reserva_info {
+            width: 70%;
+            h3 {
+                @include encabezadoh3;
+                padding-left: 20px;
+            }
+        }
+        .disciplina__reserva_boton{
+            padding-right: 20px;
+            button {
+                @include boton;    
+            }
+        }  
+    }
+}

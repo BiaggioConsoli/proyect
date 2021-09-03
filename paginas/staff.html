@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="../css/lightbox.css">
         <link rel="stylesheet" href="../css/probando.css">
         <link rel="stylesheet" href="../fonts/fonts.css">
-        <title>Disciplinas</title>
+        <script src="../js/scrollreveal.js"></script>
+        <title>Fight 2 Fit / Staff</title>
     </head>
     <body>
         <header>
@@ -41,80 +42,111 @@
             </nav>
         </header>
         <main>
-            <section>
-                <article class="staffEncabezado" >
-                   <div class= "stattEncabezado__slider"></div>
-                </article>
-                <article class="staff">
-                    <h2>¡Entrena con los mejores!</h2>
-                    <div class="staff__profesores">
-                        <!-- Profesor Jiu Jitsu -->
-                        <div class="staff__profesoresInfo">
-                            <div class="staff__profesoresInfo_imagen">
-                                <img src="../imagenes/prof_bjj.png" alt="">
-                            </div>
-                            <h3>Biaggio Macchiavello</h3>
-                            <h4>JIU JITSU</h4>
-                            <ul>
-                                <li>16 años de experiencia en el deporte.</li>
-                                <li>Cinturón Negro.</li>
-                                <li>Campeón IBJJ 2012 - 2014 - 2015.</li>
-                                <li>Fundador de BJJ Perú.</li>
-                            </ul>
+            <section class="staff">
+                <!-- Efecto carousel sin bootstrap 
+                <article  class="container-fluid staffEncabezado" >
+                    <div class="container staffEncabezado__slider"></div>
+                 </article>-->
+                <article  class="container-fluid staffEncabezado" >
+                    <div id="carouselExampleInterval" class="carousel slide carousel-fade container " data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="../imagenes/staff.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../imagenes/portada-03.png" class="d-block w-100" alt="...">
+                          </div>
                         </div>
-                         <!-- Profesor Muaythai -->
-                         <div class="staff__profesoresInfo">
-                            <div class="staff__profesoresInfo_imagen">
-                                <img src="../imagenes/staff_muay.jpg" alt="">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </article>
+                <article class="container-fluid">
+                    <h2 class="efectoLeft">¡Entrena con los mejores!</h2>
+                    <div class="row justify-content-center staff__profesores ">
+                        <!-- Profesor Jiu Jitsu -->
+                        <div class="staff__profesoresInfo efectoLeft_cardBjj">
+                            <div class="card">
+                                <img src="../imagenes/prof_bjj.png" class="card-img-top " alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">JIU JITSU</h3>
+                                    <h3 class="card-title">Biaggio Macchiavello</h3>
+                                    
+                                    <ul>
+                                        <li>16 años de experiencia en el deporte.</li>
+                                        <li>Cinturón Negro.</li>
+                                        <li>Campeón IBJJ 2012 - 2014 - 2015.</li>
+                                        <li>Fundador de BJJ Perú.</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <h3>Biaggio Consoli</h3>
-                            <h4>MUAYTHAI</h4>
-                            <ul>
-                                <li>15 años de experiencia en el deporte.</li>
-                                <li>Campeón Nacional 2009.</li>
-                                <li>Sub campeón Nacional 2010 - 2011.</li>
-                                <li>Profesor federado del IPD.</li>
-                                <li>Record: 9 - 3 - 1.</li>
-                            </ul>
+                        </div>
+                        <!-- Profesor Muaythai -->
+                        <div class="staff__profesoresInfo efectoLeft_cardThai">
+                            <div class="card">
+                                <img src="../imagenes/staff_muay.jpg" class="card-img-top " alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">MUAYTHAI</h3>
+                                    <h3 class="card-title">Biaggio Consoli</h3>
+                                    
+                                    <ul>
+                                        <li>15 años de experiencia en el deporte.</li>
+                                        <li>Campeón Nacional 2009.</li>
+                                        <li>Sub campeón Nacional 2010 - 2011.</li>
+                                        <li>Profesor federado del IPD.</li>
+                                        <li>Record: 9 - 3 - 1.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <!-- Profesor Combat Sambo -->
-                        <div class="staff__profesoresInfo">
-                            <div class="staff__profesoresInfo_imagen">
-                                <img src="../imagenes/staff_cs.jpg" alt="">
+                        <div class="staff__profesoresInfo efectoLeft_cardCs">
+                            <div class="card">
+                                <img src="../imagenes/staff_cs.jpg" class="card-img-top " alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">COMBAT SAMBO</h3>
+                                    <h3 class="card-title">Luis Adrianza</h3>
+                                    <ul>
+                                        <li>34 años de experiencia en el deporte.</li>
+                                        <li>Cinturón negro de Judo / primer dan.</li>
+                                        <li>Medallista Mundial en Sambo y Jiu Jitsu.</li>
+                                        <li>Especialista en preparacion Fisica en deportes de combate.</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <h3>Luis Adrianza</h3>
-                            <h4>COMBAT SAMBO</h4>
-                            <ul>
-                                <li>34 años de experiencia en el deporte.</li>
-                                <li>Cinturón negro de Judo / primer dan.</li>
-                                <li>Medallista Mundial en Sambo y Jiu Jitsu.</li>
-                                <li>Especialista en preparacion Fisica en deportes de combate.</li>
-                            </ul>
                         </div>
-                        <!-- Profesor Capoeira -->
-                        <div class="staff__profesoresInfo">
-                            <div class="staff__profesoresInfo_imagen">
-                                <img src="../imagenes/staff_capo.jpg" alt="">
+                         <!-- Profesor Capoeira -->
+                        <div class="staff__profesoresInfo efectoLeft_cardCapoeira">
+                            <div class="card">
+                                <img src="../imagenes/staff_capo.jpg" class="card-img-top " alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">CAPOEIRA</h3>
+                                    <h3 class="card-title">Daniel Verau</h3>
+                                    <ul>
+                                        <li>15 años de experiencia en el deporte.</li>
+                                        <li>Contramestre marrón primer grado.</li>
+                                        <li>1er puesto Mundial de Capoeira 2014.</li>
+                                        <li>Head Coach de la Escuela Nago.</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <h3>Daniel Verau</h3>
-                            <h4>CAPOEIRA</h4>
-                            <ul>
-                                <li>15 años de experiencia en el deporte.</li>
-                                <li>Contramestre marrón primer grado.</li>
-                                <li>1er puesto Mundial de Capoeira 2014.</li>
-                                <li>Head Coach de la Escuela Nago.</li>
-                            </ul>
                         </div>
                     </div>
-                </article>   
+                </article>  
             </section>
         </main>
-        <footer class="piePagina">
+        <footer class="pieDePagina">
             <div class="container" >
                 <div class="row justify-content-space-around ">
-                    <div class="col-md-3  col-xs-12 piePagina__redes">
-                        <img src="../imagenes/logof2f_blanco.png" alt="" width="60%">
-                        <div class="piePagina__redes_logos">
+                    <div class="col-md-3  col-xs-12 pieDePagina__redes">
+                        <img src="../imagenes/logof2f_blanco.png" class="logoFooter" alt="" width="60%">
+                        <div class="pieDePagina__redes_logos">
                             <a href="#"><span class="icon-instagram"></span></a>   
                             <a href="#"><span class="icon-facebook2"></span></a> 
                             <a href="#"><span class="icon-whatsapp"></span></a> 
@@ -122,15 +154,15 @@
                             <a href="#"><span class="icon-twitter"></span></a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-12 piePagina__infoContact">
+                    <div class="col-md-3 col-xs-12 pieDePagina__infoContact">
                         <h4>Contáctenos</h4>
                         <h5><span class="icon-mail2"></span> fight2fit.@gmail.com</h5> 
                         <h5><span class="icon-mobile"></span> +051 975161889</h5> 
                         <h5><span class="icon-location"></span> Jr. Nicolas Rodrigo cdra. 1, Perú</h5> 
                     </div>
-                    <div class="col-md-3  col-xs-12 piePagina__enlaces">
+                    <div class="col-md-3  col-xs-12 pieDePagina__enlaces">
                         <h4>Enlaces rápidos</h4>
-                        <div class="piePagina__enlaces_contenedor">
+                        <div class="pieDePagina__enlaces_contenedor">
                             <div>
                                 <ul>
                                     <li><a href="#">Fotos</a></li>     
@@ -142,9 +174,9 @@
                            
                         </div>   
                     </div>
-                    <div class="col-md-3  col-xs-12 piePagina__horarios">
+                    <div class="col-md-3  col-xs-12 pieDePagina__horarios">
                         <h4>Horario de apertura</h4>
-                        <div class="piePagina__horarios_contenedor">
+                        <div class="pieDePagina__horarios_contenedor">
                             <div>
                                 <h5>Lun - vie: 06:30 - 20:30 </h5>    
                                 <h5>Sábado: 09:00 - 13:00 </h5>      
@@ -155,7 +187,7 @@
                     </div>
                     
                 </div> 
-                <div class="piePagina__copyright">
+                <div class="pieDePagina__copyright">
                     <h6>©2021 Fight 2 Fit es una marca registrada / Diseño y desarrollo por Biaggio Consoli</h6>
                     <h6></h6>
                 </div>
@@ -166,5 +198,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
