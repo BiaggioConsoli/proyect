@@ -18,7 +18,7 @@ body {
         }   
     }
     .membresia__disciplina {
-        width: 38%;
+        width: 40%;
         padding: 1%;
         margin-bottom: 2%;
         margin-left: 1%;
@@ -48,6 +48,7 @@ body {
                 ul {
                     li {
                         @include parrafo;
+                        font-size: 14px;
                         color: black;
                     }
                 } 
