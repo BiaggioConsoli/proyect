@@ -488,6 +488,10 @@ body {
     50%,100% {
         background-image: url(../imagenes/portada-03.png);}      
 } */
+@media screen and (max-width: 576px) {
+  .staff .staff__profesores .staff__profesoresInfo {
+    width: 100%; } }
+
 /*Variables*/
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /*Mixin*/
@@ -547,6 +551,11 @@ body {
           line-height: 1.6;
           font-size: 14px;
           color: black; }
+
+/*media query*/
+@media screen and (max-width: 576px) {
+  .membresia .membresia__disciplina {
+    width: 90%; } }
 
 /*Variables*/
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -697,6 +706,17 @@ body {
     }
 }
 */
+/*media query*/
+@media screen and (max-width: 576px) {
+  .contacto .contacto__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .contacto .contacto__info .contacto__info_datos {
+      width: 100%; }
+    .contacto .contacto__info .contacto__info_form {
+      width: 100%; } }
+
 /*Variables*/
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /*Mixin*/

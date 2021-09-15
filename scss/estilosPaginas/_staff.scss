@@ -66,3 +66,13 @@ body {
         background-image: url(../imagenes/portada-03.png);}      
 } */
 
+@media screen and (max-width: 576px) {
+    .staff {
+        .staff__profesores { 
+            .staff__profesoresInfo {
+                width: 100%; 
+            }
+        }
+    }
+
+}

@@ -161,3 +161,22 @@ body {
     }
 }
 */
+
+/*media query*/
+@media screen and (max-width: 576px) {
+    .contacto {
+        .contacto__info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .contacto__info_datos {
+                width: 100%;
+            }
+            .contacto__info_form {
+                width: 100%;
+            }
+        }
+        
+    }
+
+}
