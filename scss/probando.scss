@@ -36,13 +36,29 @@ header {
         color:$color_parrafos;
     }
     .barramenu_links {
+        .submenu {
+            background: $color_fondoNav;  
+            a {
+                font-size: 18px;
+                &:hover {
+                    color: $color_principal;
+                }
+
+            } 
+        } 
+        li {
+            &:hover .submenu {
+                display: block;
+            }
+
+        }
         a {
+            text-decoration: none;
             @include barramenu;
             &:hover {
                 color: $color_parrafos;
             }
-        }
-        
+        }  
     }  
 }
 
