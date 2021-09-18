@@ -174,36 +174,42 @@ body {
     padding-bottom: 2%;
     /*operacion resta scss*/ }
     .reseña .reseña__info h1 {
-      font-size: 18px; }
+      font-size: 22px; }
     .reseña .reseña__info p {
       font-size: 12px; }
   /*entrenamiento*/
-  .entrenamiento img {
-    width: 60%; }
-  .entrenamiento h2 {
-    font-size: 16px; }
+  .entrenamiento {
+    padding-top: 5%;
+    padding-bottom: 5%; }
+    .entrenamiento img {
+      width: 60%;
+      padding-top: 5%;
+      padding-bottom: 5%; }
+    .entrenamiento h2 {
+      font-size: 20px; }
   .entrenamiento__info {
     width: 45%;
-    padding: 1%; }
+    padding: 1%;
+    margin-top: 3%; }
     .entrenamiento__info .card {
       width: 100%; }
       .entrenamiento__info .card h3 {
-        font-size: 16px; }
+        font-size: 18px; }
       .entrenamiento__info .card p {
-        font-size: 10px; }
+        font-size: 12px; }
   /*promociones*/
   .promociones__titulo {
     width: 100%; }
     .promociones__titulo ul {
       padding-left: 0; }
       .promociones__titulo ul li {
-        font-size: 16px; }
+        font-size: 20px; }
   .promociones__info {
     width: 80%; }
     .promociones__info h3 {
-      font-size: 14px; }
+      font-size: 18px; }
     .promociones__info h4 {
-      font-size: 12px; }
+      font-size: 16px; }
     .promociones__info .info_boton {
       display: flex;
       justify-content: center; } }
@@ -328,101 +334,127 @@ body {
 
 /*media query*/
 @media screen and (max-width: 576px) {
-  .disciplinas .disciplinas__coach {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 14px;
-    padding-top: 20px; }
-    .disciplinas .disciplinas__coach .disciplinas__coach_imagen {
-      width: 100%; }
-      .disciplinas .disciplinas__coach .disciplinas__coach_imagen img {
-        margin-top: 20px;
+  .disciplinas {
+    padding-bottom: 30px; }
+    .disciplinas .disciplinas__imagen {
+      padding-bottom: 14px;
+      position: relative; }
+      .disciplinas .disciplinas__imagen img {
+        padding: 0;
+        margin-top: 25px; }
+      .disciplinas .disciplinas__imagen .disciplinas__imagen_titulo {
+        position: absolute;
+        bottom: 0;
+        padding: 1%;
+        padding-left: 2%;
+        background: rgba(0, 0, 0, 0.5); }
+        .disciplinas .disciplinas__imagen .disciplinas__imagen_titulo h1 {
+          color: #d72136;
+          font-size: 36px;
+          font-family: 'fuente3';
+          font-weight: bold;
+          font-size: 22px; }
+    .disciplinas .disciplinas__coach {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-bottom: 14px;
+      padding-top: 10px; }
+      .disciplinas .disciplinas__coach .disciplinas__coach_imagen {
+        width: 100%; }
+        .disciplinas .disciplinas__coach .disciplinas__coach_imagen img {
+          margin-top: 20px;
+          width: 100%;
+          border-radius: 8px; }
+      .disciplinas .disciplinas__coach .disciplinas__coach_info {
+        width: 100%;
+        border-right: none;
+        padding-top: 14px; }
+        .disciplinas .disciplinas__coach .disciplinas__coach_info h3 {
+          font-family: 'fuente3';
+          color: #d72136;
+          font-size: 28px;
+          font-size: 18px; }
+        .disciplinas .disciplinas__coach .disciplinas__coach_info p {
+          font-family: 'fuente2';
+          color: whitesmoke;
+          font-size: 16px;
+          text-align: justify;
+          line-height: 1.6;
+          font-size: 14px; }
+        .disciplinas .disciplinas__coach .disciplinas__coach_info button {
+          background-color: #d72136;
+          border: 2px solid #d72136;
+          border-radius: 4px; }
+          .disciplinas .disciplinas__coach .disciplinas__coach_info button a {
+            color: #efefef;
+            font-size: 15px;
+            font-family: 'fuente2';
+            text-decoration: none;
+            font-weight: bold; }
+            .disciplinas .disciplinas__coach .disciplinas__coach_info button a:hover {
+              color: black; }
+      .disciplinas .disciplinas__coach .disciplinas__info {
+        width: 100%;
+        margin: auto;
+        padding-top: 14px;
+        padding-bottom: 1%; }
+        .disciplinas .disciplinas__coach .disciplinas__info p {
+          font-family: 'fuente2';
+          color: whitesmoke;
+          font-size: 16px;
+          text-align: justify;
+          line-height: 1.6;
+          font-size: 12px; }
+    .disciplinas .disciplinas__galeria h2 {
+      font-family: 'fuente3';
+      color: #d72136;
+      font-size: 32px;
+      font-size: 20px; }
+    .disciplinas .disciplinas__galeria .disciplinas__galeria_imagenes {
+      padding-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 16px; }
+      .disciplinas .disciplinas__galeria .disciplinas__galeria_imagenes img {
         width: 100%;
         border-radius: 8px; }
-    .disciplinas .disciplinas__coach .disciplinas__coach_info {
-      width: 100%;
-      border-right: none;
-      padding-top: 14px; }
-      .disciplinas .disciplinas__coach .disciplinas__coach_info h3 {
-        font-family: 'fuente3';
-        color: #d72136;
-        font-size: 28px; }
-      .disciplinas .disciplinas__coach .disciplinas__coach_info p {
-        font-family: 'fuente2';
-        color: whitesmoke;
-        font-size: 16px;
-        text-align: justify;
-        line-height: 1.6; }
-      .disciplinas .disciplinas__coach .disciplinas__coach_info button {
-        background-color: #d72136;
-        border: 2px solid #d72136;
-        border-radius: 4px; }
-        .disciplinas .disciplinas__coach .disciplinas__coach_info button a {
-          color: #efefef;
-          font-size: 15px;
-          font-family: 'fuente2';
-          text-decoration: none;
-          font-weight: bold; }
-          .disciplinas .disciplinas__coach .disciplinas__coach_info button a:hover {
-            color: black; }
-    .disciplinas .disciplinas__coach .disciplinas__info {
-      width: 100%;
-      margin: auto;
-      padding-top: 14px;
-      padding-bottom: 1%; }
-      .disciplinas .disciplinas__coach .disciplinas__info p {
-        font-family: 'fuente2';
-        color: whitesmoke;
-        font-size: 16px;
-        text-align: justify;
-        line-height: 1.6;
-        font-size: 12px; }
-  .disciplinas .disciplinas__galeria h2 {
-    font-family: 'fuente3';
-    color: #d72136;
-    font-size: 32px; }
-  .disciplinas .disciplinas__galeria .disciplinas__galeria_imagenes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 16px; }
-    .disciplinas .disciplinas__galeria .disciplinas__galeria_imagenes img {
-      width: 100%;
-      border-radius: 8px; }
-    .disciplinas .disciplinas__galeria .disciplinas__galeria_imagenes .cont {
-      width: 48%;
-      padding-top: 1%;
-      padding-bottom: 1%; }
-  .disciplinas .disciplina__reserva {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #252527;
-    height: 200px;
-    border-radius: 8px; }
-    .disciplinas .disciplina__reserva .disciplinas__reserva_info {
-      width: 100%;
-      text-align: center; }
-      .disciplinas .disciplina__reserva .disciplinas__reserva_info h3 {
-        font-family: 'fuente3';
-        color: #d72136;
-        font-size: 28px;
-        padding: 0px; }
-    .disciplinas .disciplina__reserva .disciplina__reserva_boton {
-      width: 90%;
-      padding-right: 0px; }
-      .disciplinas .disciplina__reserva .disciplina__reserva_boton button {
-        background-color: #d72136;
-        border: 2px solid #d72136;
-        border-radius: 4px; }
-        .disciplinas .disciplina__reserva .disciplina__reserva_boton button a {
-          color: #efefef;
-          font-size: 15px;
-          font-family: 'fuente2';
-          text-decoration: none;
-          font-weight: bold; }
-          .disciplinas .disciplina__reserva .disciplina__reserva_boton button a:hover {
-            color: black; } }
+      .disciplinas .disciplinas__galeria .disciplinas__galeria_imagenes .cont {
+        width: 48%;
+        padding-top: 1%;
+        padding-bottom: 1%; }
+    .disciplinas .disciplina__reserva {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 150px; }
+      .disciplinas .disciplina__reserva .disciplinas__reserva_info {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 3%; }
+        .disciplinas .disciplina__reserva .disciplinas__reserva_info h3 {
+          font-family: 'fuente3';
+          color: #d72136;
+          font-size: 28px;
+          font-size: 18px;
+          padding: 0px;
+          width: 70%;
+          margin: auto; }
+      .disciplinas .disciplina__reserva .disciplina__reserva_boton {
+        width: 90%;
+        padding-right: 0px; }
+        .disciplinas .disciplina__reserva .disciplina__reserva_boton button {
+          background-color: #d72136;
+          border: 2px solid #d72136;
+          border-radius: 4px; }
+          .disciplinas .disciplina__reserva .disciplina__reserva_boton button a {
+            color: #efefef;
+            font-size: 15px;
+            font-family: 'fuente2';
+            text-decoration: none;
+            font-weight: bold; }
+            .disciplinas .disciplina__reserva .disciplina__reserva_boton button a:hover {
+              color: black; } }
 
 /*Variables*/
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

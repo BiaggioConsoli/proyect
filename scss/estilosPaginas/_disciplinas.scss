@@ -107,11 +107,31 @@ body {
 /*media query*/
 @media screen and (max-width: 576px) {
     .disciplinas {
+        padding-bottom: 30px;
+        .disciplinas__imagen {
+            padding-bottom: 14px;
+            position: relative;
+            img {
+                padding: 0;
+                margin-top: 25px;
+            } 
+            .disciplinas__imagen_titulo {
+                position: absolute;
+                bottom: 0;
+                padding: 1%;
+                padding-left: 2%;
+                background: rgba(0,0,0,0.5);
+                h1 {
+                    @include encabezadoh1;
+                    font-size: 22px;
+                }
+            }
+        }  
         .disciplinas__coach {
             display: flex;
             flex-direction: column-reverse;
             padding-bottom: 14px;
-            padding-top: 20px;
+            padding-top: 10px;
             .disciplinas__coach_imagen {
                 width: 100%;
                 img {
@@ -126,9 +146,11 @@ body {
                 padding-top: 14px;
                 h3 {
                     @include encabezadoh3;
+                    font-size: 18px;
                 }
                 p {
                     @include parrafo;
+                    font-size: 14px;
                 }
                 button {
                     @include boton;
@@ -149,8 +171,10 @@ body {
         .disciplinas__galeria {
             h2 {
                 @include encabezadoh2;
+                font-size: 20px;
             }
             .disciplinas__galeria_imagenes {
+                padding-bottom: 10px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
@@ -170,19 +194,17 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            
-            background-color: #252527;
-            height: 200px;
-            
-            
-           
-            border-radius: 8px;
+            height: 150px; 
             .disciplinas__reserva_info {
                 width: 100%;
                 text-align: center;
+                padding-bottom: 3%;
                 h3 {
                     @include encabezadoh3;
+                    font-size: 18px;
                     padding: 0px;
+                    width: 70%;
+                    margin: auto;
                 }
             }
             .disciplina__reserva_boton{

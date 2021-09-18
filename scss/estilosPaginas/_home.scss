@@ -176,7 +176,7 @@ body {
         padding-bottom: 2%;
         /*operacion resta scss*/
         .reseña__info h1 { 
-            font-size: 30px - 12;
+            font-size: 30px - 8;
         }
         .reseña__info p {
             font-size: 16px -  4;
@@ -185,25 +185,32 @@ body {
 
     /*entrenamiento*/
     .entrenamiento {
-        img {
-            width: 60%;
-        }
-    }
+        padding-top: 5%;
+        padding-bottom: 5%;
 
-    .entrenamiento h2 {
-        font-size: 16px;
+            img {
+                width: 60%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+        
+            h2 {
+            font-size: 20px;
+            }
+
     }
 
     .entrenamiento__info {
         width: 45%;
         padding: 1%; 
+        margin-top: 3%;
         .card {
                 width: 100%;
             h3 {
-                font-size: 16px;
+                font-size: 18px;
             }
             p {
-            font-size: 10px;
+            font-size: 12px;
             }    
         }   
     }
@@ -215,7 +222,7 @@ body {
        ul {
             padding-left: 0;
             li {
-                font-size: 16px;
+                font-size: 20px;
             }
        }
     }
@@ -223,10 +230,10 @@ body {
     .promociones__info {
         width: 80%;
         h3 {
-            font-size: 14px;
+            font-size: 18px;
         }
         h4 {
-            font-size: 12px;
+            font-size: 16px;
         }
         .info_boton {
             display: flex;
