@@ -55,13 +55,77 @@ body {
             }   
         }
     }
+    .membresia__promociones {
+        margin: auto;
+        text-align: center;
+        h2 {
+            @include encabezadoh2;
+            margin-bottom: 3%;
+        }
+    }
 }
 
 /*media query*/
 @media screen and (max-width: 576px) {
     .membresia {
+        .membresia__titulo {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            h2 {
+                @include encabezadoh2;
+                font-size: 20px;
+            }   
+        }
         .membresia__disciplina {
             width: 90%;
+            margin-bottom: 5%;
+            img {
+                width: 100%;
+            }
+            figure {
+                background: $color_fondoCards;
+                img {
+                    width: 100%;
+                   
+                }
+                figcaption {
+                    background: $color_fondoCards;
+                   
+                    h3 {
+                        @include encabezadoh3;
+                        font-size: 18px;
+                        margin-top: -22px;
+                        margin-bottom: 3px;
+                    }
+                    p {
+                        @include parrafo;
+                        font-size: 12px;
+                        color: black;
+                        margin: 0;
+                    }
+                    h4 {
+                        @include encabezadoH4;
+                        font-size: 14px;
+                        margin-bottom: 2px;
+                    }
+                    ul {
+                        margin: 0;
+                        li {
+                            @include parrafo;
+                            font-size: 12px;
+                            color: black;
+                            margin: 0;
+                        }
+                    } 
+                }   
+            }
+        }
+        .membresia__promociones {
+            margin-bottom: 20px;
+            h2 {
+                font-size: 20px;
+               
+            }
         }
     }
 

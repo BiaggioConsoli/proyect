@@ -548,7 +548,8 @@ body {
       font-size: 16px;
       text-align: justify;
       line-height: 1.6;
-      font-size: 14px; } }
+      font-size: 14px;
+      color: black; } }
 
 /*Variables*/
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -609,11 +610,73 @@ body {
           line-height: 1.6;
           font-size: 14px;
           color: black; }
+  .membresia .membresia__promociones {
+    margin: auto;
+    text-align: center; }
+    .membresia .membresia__promociones h2 {
+      font-family: 'fuente3';
+      color: #d72136;
+      font-size: 32px;
+      margin-bottom: 3%; }
 
 /*media query*/
 @media screen and (max-width: 576px) {
+  .membresia .membresia__titulo {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+    .membresia .membresia__titulo h2 {
+      font-family: 'fuente3';
+      color: #d72136;
+      font-size: 32px;
+      font-size: 20px; }
   .membresia .membresia__disciplina {
-    width: 90%; } }
+    width: 90%;
+    margin-bottom: 5%; }
+    .membresia .membresia__disciplina img {
+      width: 100%; }
+    .membresia .membresia__disciplina figure {
+      background: #efefef; }
+      .membresia .membresia__disciplina figure img {
+        width: 100%; }
+      .membresia .membresia__disciplina figure figcaption {
+        background: #efefef; }
+        .membresia .membresia__disciplina figure figcaption h3 {
+          font-family: 'fuente3';
+          color: #d72136;
+          font-size: 28px;
+          font-size: 18px;
+          margin-top: -22px;
+          margin-bottom: 3px; }
+        .membresia .membresia__disciplina figure figcaption p {
+          font-family: 'fuente2';
+          color: whitesmoke;
+          font-size: 16px;
+          text-align: justify;
+          line-height: 1.6;
+          font-size: 12px;
+          color: black;
+          margin: 0; }
+        .membresia .membresia__disciplina figure figcaption h4 {
+          font-family: 'fuente3';
+          color: #d72136;
+          font-size: 20px;
+          font-size: 14px;
+          margin-bottom: 2px; }
+        .membresia .membresia__disciplina figure figcaption ul {
+          margin: 0; }
+          .membresia .membresia__disciplina figure figcaption ul li {
+            font-family: 'fuente2';
+            color: whitesmoke;
+            font-size: 16px;
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 12px;
+            color: black;
+            margin: 0; }
+  .membresia .membresia__promociones {
+    margin-bottom: 20px; }
+    .membresia .membresia__promociones h2 {
+      font-size: 20px; } }
 
 /*Variables*/
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
