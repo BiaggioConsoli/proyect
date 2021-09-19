@@ -56,7 +56,7 @@
                 <article class="container-fluid contacto">
                     <div class="container">
                         <div class="row contacto__imagen">
-                            <img src="../imagenes/contacto.png" alt="">
+                            <img src="../imagenes/contacto.png" class="efectofront" alt="">
                         </div>
                     </div>
                     <div class="row justify-content-center contacto__info" >
@@ -77,15 +77,12 @@
                                 <fieldset>
                                     <legend>Ingresa tus datos</legend>
                                     <div class="fieldset__datos">
-                                        <label for="Primer nombre"></label>
                                         <input type="text" name="Primer nombre" placeholder="Primer nombre" required>
-                                        <label for="Apellido"></label>
+                                        <br>
                                         <input type="text" name="Apellido" placeholder="Apellido" required>
-                                    </div> 
-                                    <div class="fieldset__datos">
-                                        <label for="email"></label>
+                                        <br>
                                         <input type="email" name="Email" placeholder="nombre@ejemplo.com" required>
-                                        <label for="Numero de telefono"></label>
+                                        <br>
                                         <input type="tel" name="Numero de telefono" placeholder="Número celular" required>
                                     </div>
                                     <div class="fieldset__datos">
@@ -101,12 +98,11 @@
                                         <label for="Recibir información">Recibir información de promociones</label>
                                         <input type="checkbox" name="Recibir información" value="1">
                                         <br>
-                                        <br>
                                         <textarea rows="8" cols="52" name="mensaje" placeholder="Mensaje" required></textarea>
                                     </div>
-                                    <div>
-                                        <input type="submit" class="fieldset__boton" value="Enviar formulario"> 
-                                        <input type="reset" class="fieldset__boton" value="Limpiar formulario"> 
+                                    <div class="fieldset__boton"  >
+                                        <input type="submit" class="btnForm" value="Enviar formulario"> 
+                                        <input type="reset" class="btnForm" value="Limpiar formulario"> 
                                     </div>
                                 </fieldset>
                             </form>

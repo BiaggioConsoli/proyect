@@ -721,13 +721,23 @@ body {
         font-family: 'fuente3';
         color: #d72136;
         font-size: 20px; }
-      .contacto .contacto__info .contacto__info_form form fieldset legend {
-        font-family: 'fuente3';
-        color: #d72136;
-        font-size: 20px;
-        font-family: 'fuente2'; }
-      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos {
-        padding: 1%; }
+      .contacto .contacto__info .contacto__info_form form fieldset {
+        /*.fieldset__boton {
+                        @include boton;
+                        width: 28%;
+                        
+                        margin-top: 2%;
+                        border-radius: 4px;
+                        &:hover {
+                            box-shadow: 0px 3px 0px ;
+                            padding-top: 3px;
+                        }
+                    }*/ }
+        .contacto .contacto__info .contacto__info_form form fieldset legend {
+          font-family: 'fuente3';
+          color: #d72136;
+          font-size: 20px;
+          font-family: 'fuente2'; }
         .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos label {
           font-family: 'fuente2';
           color: whitesmoke;
@@ -735,25 +745,33 @@ body {
           text-align: justify;
           line-height: 1.6;
           font-weight: bold;
-          padding-right: 1%; }
-      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton {
-        background-color: #d72136;
-        border: 2px solid #d72136;
-        border-radius: 4px;
-        width: 28%;
-        margin: 1%;
-        border-radius: 4px; }
-        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton a {
-          color: #efefef;
-          font-size: 15px;
-          font-family: 'fuente2';
-          text-decoration: none;
-          font-weight: bold; }
-          .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton a:hover {
-            color: black; }
-        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton:hover {
-          box-shadow: 0px 3px 0px;
-          padding-top: 3px; }
+          margin-bottom: 2%; }
+        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos input {
+          margin-bottom: 3%; }
+        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos textarea {
+          margin-bottom: 2%; }
+        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton {
+          display: flex;
+          justify-content: space-around;
+          width: 68%; }
+          .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm {
+            background-color: #d72136;
+            border: 2px solid #d72136;
+            border-radius: 4px;
+            color: #efefef;
+            width: 40%;
+            border-radius: 4px; }
+            .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm a {
+              color: #efefef;
+              font-size: 15px;
+              font-family: 'fuente2';
+              text-decoration: none;
+              font-weight: bold; }
+              .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm a:hover {
+                color: black; }
+            .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm:hover {
+              box-shadow: #d72136 0px 3px 0px;
+              padding-top: 3px; }
 
 /*
 .btn_form input {
@@ -829,14 +847,35 @@ body {
 */
 /*media query*/
 @media screen and (max-width: 576px) {
+  .contacto .contacto__imagen {
+    padding-top: 30px;
+    padding-bottom: 20px; }
   .contacto .contacto__info {
-    width: 100%;
-    display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: auto; }
     .contacto .contacto__info .contacto__info_datos {
       width: 100%; }
+      .contacto .contacto__info .contacto__info_datos h3 {
+        font-size: 18px;
+        margin-bottom: 16px; }
+      .contacto .contacto__info .contacto__info_datos p {
+        font-size: 12px; }
+      .contacto .contacto__info .contacto__info_datos a img {
+        width: 100%;
+        margin-bottom: 16px; }
     .contacto .contacto__info .contacto__info_form {
-      width: 100%; } }
+      width: 100%;
+      margin: auto; }
+      .contacto .contacto__info .contacto__info_form h4 {
+        font-size: 16px; }
+      .contacto .contacto__info .contacto__info_form form fieldset legend {
+        font-size: 16px; }
+      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos textarea {
+        width: 100%; }
+      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton {
+        width: 100%; }
+        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm {
+          width: 44%; } }
 
 /*Variables*/
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
