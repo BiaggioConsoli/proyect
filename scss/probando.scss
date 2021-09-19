@@ -42,14 +42,12 @@ header {
                 &:hover {
                     color: $color_principal;
                 }
-
             } 
         } 
         li {
             &:hover .submenu {
                 display: block;
             }
-
         }
         a {
             text-decoration: none;
@@ -134,6 +132,21 @@ header {
     .pieDePagina__copyright {
         margin-top: 40px;    
     }
+}
+
+/*media query*/
+@media screen and (max-width: 576px) {
+    .pieDePagina {
+        .pieDePagina__redes {
+            margin-bottom: 5%;
+        }
+        .pieDePagina__infoContact {
+            margin-bottom: 7%; 
+        }
+        .pieDePagina__enlaces {
+            margin-bottom: 5%;     
+        }
+    } 
 }
 
 

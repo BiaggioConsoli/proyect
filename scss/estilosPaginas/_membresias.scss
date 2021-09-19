@@ -6,16 +6,33 @@ body {
 .membresia {
     background: $color_fondoArticle;
     padding-bottom: 50px;
-    margin: 0 ;
-
+    .membresia__imagen {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
     .membresia__titulo {
         margin: auto;
         text-align: center;
         h2 {
             @include encabezadoh2;
             margin-top: 2%;
-            margin-bottom: 3%;
+            margin-bottom: 2%;
         }   
+    }
+    .membresia__info {
+        width: 100%;
+        ul {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 3%;
+            li {
+                font-size: 20px;
+                color: $color_fondoCards;
+                margin-bottom: 2%;
+                font-family: 'fuente2';
+                text-align: justify;
+            }
+        }
     }
     .membresia__disciplina {
         width: 40%;
@@ -60,22 +77,46 @@ body {
         text-align: center;
         h2 {
             @include encabezadoh2;
-            margin-bottom: 3%;
+            margin-top: 2%;
+            margin-bottom: 2%;
         }
     }
+    .membresia__promociones_info {
+            width: 100%;
+            h4 {
+                width: 80%;
+                margin: auto;
+                font-size: 20px;
+                font-family: 'fuente2';
+                margin-bottom: 2%;
+                text-align: center;
+                color: $color_fondoCards;
+            }
+    }
+    
 }
 
 /*media query*/
 @media screen and (max-width: 576px) {
     .membresia {
         .membresia__titulo {
-            margin-top: 30px;
-            margin-bottom: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             h2 {
-                @include encabezadoh2;
                 font-size: 20px;
+                margin-top: 1%;
+                margin-bottom: 1%;
             }   
         }
+        .membresia__info {
+            ul {
+                width: 80%;
+                margin-bottom: 4%;
+                li {
+                    font-size: 16px;
+                }
+            }
+        }   
         .membresia__disciplina {
             width: 90%;
             margin-bottom: 5%;
@@ -83,37 +124,24 @@ body {
                 width: 100%;
             }
             figure {
-                background: $color_fondoCards;
-                img {
-                    width: 100%;
-                   
-                }
                 figcaption {
-                    background: $color_fondoCards;
-                   
                     h3 {
-                        @include encabezadoh3;
                         font-size: 18px;
                         margin-top: -22px;
                         margin-bottom: 3px;
                     }
                     p {
-                        @include parrafo;
                         font-size: 12px;
-                        color: black;
                         margin: 0;
                     }
                     h4 {
-                        @include encabezadoH4;
                         font-size: 14px;
                         margin-bottom: 2px;
                     }
                     ul {
                         margin: 0;
                         li {
-                            @include parrafo;
                             font-size: 12px;
-                            color: black;
                             margin: 0;
                         }
                     } 
@@ -121,14 +149,21 @@ body {
             }
         }
         .membresia__promociones {
-            margin-bottom: 20px;
+            margin-bottom: 1%;
             h2 {
                 font-size: 20px;
-               
+            }
+        }
+        .membresia__promociones_info {
+            width: 100%;
+            margin-bottom: 5%;
+            h4 {
+                width: 90%;
+                font-size: 16px;
+                text-align: justify;
             }
         }
     }
-
 }
 
 
