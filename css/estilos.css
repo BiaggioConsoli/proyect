@@ -96,9 +96,7 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 10% 80% 10%;
-  grid-template-areas: "titulo descuento"
- " img img" 
- " boton boton";
+  grid-template-areas: "titulo descuento" " img img"  " boton boton";
   margin-top: 3%;
   border: 1px solid #efefef;
   border-radius: 8px;
@@ -741,130 +739,46 @@ body {
         font-family: 'fuente3';
         color: #d72136;
         font-size: 20px; }
-      .contacto .contacto__info .contacto__info_form form fieldset {
-        /*.fieldset__boton {
-                        @include boton;
-                        width: 28%;
-                        
-                        margin-top: 2%;
-                        border-radius: 4px;
-                        &:hover {
-                            box-shadow: 0px 3px 0px ;
-                            padding-top: 3px;
-                        }
-                    }*/ }
-        .contacto .contacto__info .contacto__info_form form fieldset legend {
-          font-family: 'fuente3';
-          color: #d72136;
-          font-size: 20px;
-          font-family: 'fuente2'; }
-        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos label {
-          font-family: 'fuente2';
-          color: whitesmoke;
-          font-size: 16px;
-          text-align: justify;
-          line-height: 1.6;
-          font-weight: bold;
-          margin-bottom: 2%; }
-        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos input {
-          margin-bottom: 3%; }
-        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos textarea {
-          margin-bottom: 2%; }
-        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton {
-          display: flex;
-          justify-content: space-around;
-          width: 68%; }
-          .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm {
-            background-color: #d72136;
-            border: 2px solid #d72136;
-            border-radius: 4px;
+      .contacto .contacto__info .contacto__info_form form fieldset legend {
+        font-family: 'fuente3';
+        color: #d72136;
+        font-size: 20px;
+        font-family: 'fuente2'; }
+      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos label {
+        font-family: 'fuente2';
+        color: whitesmoke;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.6;
+        font-weight: bold;
+        margin-bottom: 2%; }
+      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos input {
+        margin-bottom: 3%; }
+      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos textarea {
+        margin-bottom: 2%; }
+      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton {
+        display: flex;
+        justify-content: space-around;
+        width: 68%; }
+        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm {
+          background-color: #d72136;
+          border: 2px solid #d72136;
+          border-radius: 4px;
+          color: #efefef;
+          width: 40%;
+          border-radius: 4px; }
+          .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm a {
             color: #efefef;
-            width: 40%;
-            border-radius: 4px; }
-            .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm a {
-              color: #efefef;
-              font-size: 15px;
-              font-family: 'fuente2';
-              text-decoration: none;
-              font-weight: bold; }
-              .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm a:hover {
-                color: black; }
-            .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm:hover {
-              box-shadow: #d72136 0px 3px 0px;
-              padding-top: 3px; }
+            font-size: 15px;
+            font-family: 'fuente2';
+            text-decoration: none;
+            font-weight: bold; }
+            .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm a:hover {
+              color: black; }
+          .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm:hover {
+            box-shadow: #d72136 0px 3px 0px;
+            padding-top: 3px; }
 
-/*
-.btn_form input {
-    background-color: whitesmoke;
-    margin-right: 10px;
-    padding: 5px;
-    font-family: 'fuente2';
-    box-shadow: 0px 2px 0px #d72136;
-}
-
-.btn_form input:hover {
-    box-shadow: 0px 3px 0px ;
-    padding-top: 6px;
-}
-*/
-/*
-.formulario {
-    display: flex;
-    min-height: 100vh;
-    .form {
-        background: $color_fondoCards;
-        margin: auto;
-        width: 90%;
-        max-width: 400px;
-        padding: 3%;
-        border-radius: 8px;
-        .form__titulo {
-            @include encabezadoH5;
-            margin-bottom: 5%;
-        }
-        .form__contenedor {
-            display: grid;
-            gap: 5%;
-            .form__grupo {
-                position: relative;
-                --color: blue;
-                .form__input {
-                    width: 100%;
-                    background: none;
-                    color: gray;
-                    font-size: 18px;
-                    padding: 1%;
-                    border: none;
-                    outline: none;
-                    border-bottom: 1px solid var(--color);
-                    font-family: 'fuente2';
-                
-                    &:focus + .form__label, .form__input:not(:placeholder-shown) + .form__label {
-                        transform: translateY(-12px) scale(.7);
-                        transform-origin: left top;
-                    }
-
-                    /*&:not(:placeholder-shown) + .form__label{
-                    transform: translateY(-12px) scale(.7);
-                    transform-origin: left top;
-                    }*
-                }
-                .form__label {
-                    color: var(--color);
-                    
-                    position: absolute;
-                    font-family: 'fuente2';
-                    top: 0;
-                    left: 5px;
-                    transform: translateY(10px);
-                    transition: transform .5s, color .3s;
-                } 
-            }
-
-        }
-    }
-}
-*/
 /*media query*/
 @media (max-width: 768px) {
   .contacto .contacto__imagen {
