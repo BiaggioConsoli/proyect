@@ -167,7 +167,7 @@ body {
     margin-top: 0; } }
 
 /*media query*/
-@media screen and (max-width: 576px) {
+@media (max-width: 768px) {
   /*rerseña*/
   .reseña {
     padding-top: 6%;
@@ -333,7 +333,7 @@ body {
             color: black; }
 
 /*media query*/
-@media screen and (max-width: 576px) {
+@media (max-width: 768px) {
   .disciplinas {
     padding-bottom: 30px; }
     .disciplinas .disciplinas__imagen {
@@ -531,7 +531,7 @@ body {
     50%,100% {
         background-image: url(../imagenes/portada-03.png);}      
 } */
-@media screen and (max-width: 576px) {
+@media (max-width: 768px) {
   .staff .staffEncabezado {
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -645,7 +645,7 @@ body {
       color: #efefef; }
 
 /*media query*/
-@media screen and (max-width: 576px) {
+@media (max-width: 768px) {
   .membresia .membresia__titulo {
     margin-top: 10px;
     margin-bottom: 10px; }
@@ -858,7 +858,7 @@ body {
 }
 */
 /*media query*/
-@media screen and (max-width: 576px) {
+@media (max-width: 768px) {
   .contacto .contacto__imagen {
     padding-top: 30px;
     padding-bottom: 20px; }
@@ -998,7 +998,7 @@ header {
     margin-top: 40px; }
 
 /*media query*/
-@media screen and (max-width: 576px) {
+@media (max-width: 768px) {
   .pieDePagina .pieDePagina__redes {
     margin-bottom: 5%; }
   .pieDePagina .pieDePagina__infoContact {

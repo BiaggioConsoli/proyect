@@ -105,7 +105,7 @@ body {
 }
 
 /*media query*/
-@media screen and (max-width: 576px) {
+@media (max-width: 768px) {
     .disciplinas {
         padding-bottom: 30px;
         .disciplinas__imagen {
