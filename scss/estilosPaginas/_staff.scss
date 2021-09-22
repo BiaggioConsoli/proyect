@@ -80,6 +80,11 @@ body {
 
 @media (max-width: 768px) {
     .staff {
+        .staff__info{
+            h4 {
+                font-size: 16px;  
+            }      
+        }
         .staffEncabezado {
             padding-top: 30px;
             padding-bottom: 30px;

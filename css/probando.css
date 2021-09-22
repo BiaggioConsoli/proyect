@@ -532,6 +532,8 @@ body {
         background-image: url(../imagenes/portada-03.png);}      
 } */
 @media (max-width: 768px) {
+  .staff .staff__info h4 {
+    font-size: 16px; }
   .staff .staffEncabezado {
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -653,6 +655,10 @@ body {
       font-size: 20px;
       margin-top: 1%;
       margin-bottom: 1%; }
+  .membresia .membresia__info {
+    width: 100%; }
+    .membresia .membresia__info ul li {
+      font-size: 16px; }
   .membresia .membresia__info ul {
     width: 80%;
     margin-bottom: 4%; }

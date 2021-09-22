@@ -109,6 +109,14 @@ body {
             }   
         }
         .membresia__info {
+            width: 100%;
+            ul {
+                li {
+                    font-size: 16px;
+                }
+            }
+        }
+        .membresia__info {
             ul {
                 width: 80%;
                 margin-bottom: 4%;
