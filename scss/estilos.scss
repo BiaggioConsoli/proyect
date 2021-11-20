@@ -56,7 +56,60 @@ header {
                 color: $color_parrafos;
             }
         }  
-    }  
+    }
+
+    
+    .ctm {
+        display: flex;
+        
+        
+        .user_registro_icon {
+            
+            display: none;
+            span {
+                color: $color_principal;
+                padding-right: 6px;
+                
+            }
+            
+        }
+    
+        .user_registro_icon-registrado {
+            display: block;
+            
+           
+        }
+
+        .user_registro {
+            h2 {
+                color: $color_principal;
+                font-family: 'fuente2';
+                
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+    }
+   
+
+    .boton_registro {
+        @include boton;
+        padding: 5px;
+        display: block;
+    }
+
+    .boton_registro-registrado {
+        @include boton;
+        padding: 5px;
+        display: none;
+    }
+
+    
+    
+        
+    
+
 }
 
 /*footer*/

@@ -733,53 +733,122 @@ body {
         width: 80%;
         margin-top: 1%;
         margin-bottom: 3%; }
-    .contacto .contacto__info .contacto__info_form {
-      width: 40%; }
-      .contacto .contacto__info .contacto__info_form h4 {
-        font-family: 'fuente3';
-        color: #d72136;
-        font-size: 20px; }
-      .contacto .contacto__info .contacto__info_form form fieldset legend {
-        font-family: 'fuente3';
-        color: #d72136;
-        font-size: 20px;
-        font-family: 'fuente2'; }
-      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos label {
+  .contacto .contacto__info_form {
+    width: 40%; }
+    .contacto .contacto__info_form h4 {
+      font-family: 'fuente3';
+      color: #d72136;
+      font-size: 20px; }
+    .contacto .contacto__info_form h5 {
+      font-family: 'fuente3';
+      color: #d72136;
+      font-size: 20px;
+      font-family: 'fuente2'; }
+    .contacto .contacto__info_form .formulario {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px; }
+      .contacto .contacto__info_form .formulario .formulario__grupo .formulario__label {
+        display: block;
         font-family: 'fuente2';
         color: whitesmoke;
         font-size: 16px;
         text-align: justify;
         line-height: 1.6;
         font-weight: bold;
-        margin-bottom: 2%; }
-      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos input {
-        margin-bottom: 3%; }
-      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos textarea {
-        margin-bottom: 2%; }
-      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton {
+        padding: 5px;
+        cursor: pointer; }
+      .contacto .contacto__info_form .formulario .formulario__grupo .formulario__grupo-input {
+        position: relative; }
+        .contacto .contacto__info_form .formulario .formulario__grupo .formulario__grupo-input .formulario__input {
+          width: 90%;
+          border: 3px solid transparent;
+          border-radius: 3px;
+          height: 30px;
+          line-height: 30px;
+          transition: .3s ease all; }
+        .contacto .contacto__info_form .formulario .formulario__grupo .formulario__grupo-input .formulario__input:focus {
+          border: 3px solid blue;
+          outline: none; }
+        .contacto .contacto__info_form .formulario .formulario__grupo .formulario__grupo-input .formulario__validacion-estado {
+          color: black;
+          position: absolute;
+          right: 35px;
+          bottom: 7px;
+          z-index: 100;
+          opacity: 0; }
+      .contacto .contacto__info_form .formulario .formulario__grupo .formulario__input-error {
+        width: 90%;
+        font-family: 'fuente2';
+        color: whitesmoke;
+        font-size: 12px;
+        text-align: justify;
+        display: none; }
+      .contacto .contacto__info_form .formulario .formulario__grupo .formulario__input-error-activo {
+        display: block; }
+      .contacto .contacto__info_form .formulario .formulario__grupo-terminos,
+      .contacto .contacto__info_form .formulario .formulario__mensaje,
+      .contacto .contacto__info_form .formulario .formulario__grupo-btn-enviar {
+        grid-column: span 2; }
+      .contacto .contacto__info_form .formulario .formulario__mensaje {
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        background: #d72136;
+        padding: 0 15px;
+        border-radius: 3px;
+        display: none; }
+        .contacto .contacto__info_form .formulario .formulario__mensaje p {
+          text-align: center;
+          margin: 0; }
+          .contacto .contacto__info_form .formulario .formulario__mensaje p span {
+            font-size: 20px; }
+      .contacto .contacto__info_form .formulario .formulario__mensaje-activo {
+        display: block; }
+      .contacto .contacto__info_form .formulario .formulario__grupo-btn-enviar {
         display: flex;
-        justify-content: space-around;
-        width: 68%; }
-        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm {
+        flex-direction: column;
+        align-items: center; }
+        .contacto .contacto__info_form .formulario .formulario__grupo-btn-enviar .formulario__btn {
           background-color: #d72136;
           border: 2px solid #d72136;
           border-radius: 4px;
+          width: 30%;
           color: #efefef;
-          width: 40%;
-          border-radius: 4px; }
-          .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm a {
+          font-size: 15px;
+          font-family: 'fuente2';
+          text-decoration: none;
+          font-weight: bold; }
+          .contacto .contacto__info_form .formulario .formulario__grupo-btn-enviar .formulario__btn a {
             color: #efefef;
             font-size: 15px;
             font-family: 'fuente2';
             text-decoration: none;
             font-weight: bold; }
-            .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm a:hover {
+            .contacto .contacto__info_form .formulario .formulario__grupo-btn-enviar .formulario__btn a:hover {
               color: black; }
-          .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm:hover {
-            box-shadow: #d72136 0px 3px 0px;
-            padding-top: 3px; }
+          .contacto .contacto__info_form .formulario .formulario__grupo-btn-enviar .formulario__btn:hover {
+            color: black; }
+        .contacto .contacto__info_form .formulario .formulario__grupo-btn-enviar .formulario__mensaje-exito {
+          font-family: 'fuente2';
+          color: black;
+          font-size: 18px;
+          font-weight: bold;
+          color: #efefef;
+          display: none; }
+        .contacto .contacto__info_form .formulario .formulario__grupo-btn-enviar .formulario__mensaje-exito-activo {
+          display: block; }
+      .contacto .contacto__info_form .formulario .formulario__grupo-correcto .formulario__grupo-input .formulario__validacion-estado {
+        color: greenyellow;
+        opacity: 1; }
+      .contacto .contacto__info_form .formulario .formulario__grupo-incorrecto .formulario__label {
+        color: #d72136; }
+      .contacto .contacto__info_form .formulario .formulario__grupo-incorrecto .formulario__grupo-input .formulario__validacion-estado {
+        color: #d72136;
+        opacity: 1; }
+      .contacto .contacto__info_form .formulario .formulario__grupo-incorrecto .formulario__grupo-input .formulario__input {
+        border: 3px solid #d72136; }
 
-/*media query*/
 @media (max-width: 768px) {
   .contacto .contacto__imagen {
     padding-top: 30px;
@@ -802,14 +871,17 @@ body {
       margin: auto; }
       .contacto .contacto__info .contacto__info_form h4 {
         font-size: 16px; }
-      .contacto .contacto__info .contacto__info_form form fieldset legend {
+      .contacto .contacto__info .contacto__info_form h5 {
         font-size: 16px; }
-      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__datos textarea {
-        width: 100%; }
-      .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton {
-        width: 100%; }
-        .contacto .contacto__info .contacto__info_form form fieldset .fieldset__boton .btnForm {
-          width: 44%; } }
+      .contacto .contacto__info .contacto__info_form .formulario {
+        grid-template-columns: 1fr;
+        text-align: center; }
+        .contacto .contacto__info .contacto__info_form .formulario .formulario__grupo-terminos,
+        .contacto .contacto__info .contacto__info_form .formulario .formulario__mensaje,
+        .contacto .contacto__info .contacto__info_form .formulario .formulario__grupo-btn-enviar {
+          grid-column: 1; }
+        .contacto .contacto__info .contacto__info_form .formulario .formulario__grupo-btn-enviar .formulario__btn {
+          width: 90%; } }
 
 /*Variables*/
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -858,6 +930,48 @@ header {
     color: #d72136; }
     header .barramenu_links a:hover {
       color: whitesmoke; }
+  header .ctm {
+    display: flex; }
+    header .ctm .user_registro_icon {
+      display: none; }
+      header .ctm .user_registro_icon span {
+        color: #d72136;
+        padding-right: 6px; }
+    header .ctm .user_registro_icon-registrado {
+      display: block; }
+    header .ctm .user_registro h2 {
+      color: #d72136;
+      font-family: 'fuente2';
+      font-size: 18px;
+      font-weight: bold; }
+  header .boton_registro {
+    background-color: #d72136;
+    border: 2px solid #d72136;
+    border-radius: 4px;
+    padding: 5px;
+    display: block; }
+    header .boton_registro a {
+      color: #efefef;
+      font-size: 15px;
+      font-family: 'fuente2';
+      text-decoration: none;
+      font-weight: bold; }
+      header .boton_registro a:hover {
+        color: black; }
+  header .boton_registro-registrado {
+    background-color: #d72136;
+    border: 2px solid #d72136;
+    border-radius: 4px;
+    padding: 5px;
+    display: none; }
+    header .boton_registro-registrado a {
+      color: #efefef;
+      font-size: 15px;
+      font-family: 'fuente2';
+      text-decoration: none;
+      font-weight: bold; }
+      header .boton_registro-registrado a:hover {
+        color: black; }
 
 /*footer*/
 .pieDePagina {

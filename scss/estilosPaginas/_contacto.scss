@@ -36,55 +36,186 @@ body {
                 }
             }
         }
-
-        .contacto__info_form {
-            width: 40%;
-            h4 {
-                @include encabezadoH4;
-            }
-            form {
-                fieldset {
-                    legend{
-                        @include encabezadoH4;
-                        font-family: 'fuente2';
+    }
+    
+    .contacto__info_form {
+        width: 40%;
+        h4 {
+            @include encabezadoH4;
+        }
+        h5 {
+            @include encabezadoH4;
+            font-family: 'fuente2';
+        }
+        .formulario {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            .formulario__grupo {
+                .formulario__label {
+                    display: block;
+                    @include parrafo;
+                    font-weight: bold;
+                    padding: 5px;
+                    cursor: pointer;
+                }
+                .formulario__grupo-input {
+                    position: relative;
+                    .formulario__input {
+                        width: 90%;
+                        border: 3px solid transparent;
+                        border-radius: 3px;
+                        height: 30px;
+                        line-height: 30px;
+                        transition: .3s ease all;
                     }
-                    .fieldset__datos {
-                        label {
-                            @include parrafo;
-                            font-weight: bold;
-                            margin-bottom: 2%;                          
-                        }
-                        input {
-                            margin-bottom: 3%
-                        }
-                        textarea {
-                            margin-bottom: 2%;
-                        }
+                    .formulario__input:focus {
+                        border: 3px solid blue;
+                        outline: none;
+                    }
                     
-                    }
-                    .fieldset__boton {
-                        display: flex;
-                        justify-content: space-around;
-                        width: 68%;
-                        .btnForm {
-                            @include boton;
-                            color: $color_fondoCards;
-                            width: 40%;
-                            border-radius: 4px;
-                            &:hover {
-                                box-shadow: $color_principal 0px 3px 0px ;
-                                padding-top: 3px;
-                            }
-                        }
+                    .formulario__validacion-estado{
+                        color: black;
+                        position: absolute;
+                        right: 35px;
+                        bottom: 7px;
+                        z-index: 100;
+                        opacity: 0;
                     }
                 }
+                .formulario__input-error {
+                    width: 90%;
+                    font-family:'fuente2';
+                    color: $color_parrafos;
+                    font-size: 12px;
+                    text-align: justify;
+                    display: none;
+                }
+                .formulario__input-error-activo {
+                    display: block;
+                }
+            }
+                
+            .formulario__grupo-terminos,
+            .formulario__mensaje,
+            .formulario__grupo-btn-enviar {
+                grid-column: span 2;
+
+            }
+            .formulario__mensaje {
+                width: 100%;
+                height: 45px;
+                line-height: 45px;
+                background: $color_principal;
+                padding: 0 15px;
+                border-radius: 3px;
+                display: none;
+                p {
+                    text-align: center;
+                    margin: 0;
+                    span {
+                        font-size: 20px;
+                    }
+                } 
+            }
+            .formulario__mensaje-activo {
+                display: block;
+            }
+            .formulario__grupo-btn-enviar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .formulario__btn {
+                    @include boton;
+                    width: 30%;
+                    color: #efefef;
+                    font-size: 15px;
+                    font-family: 'fuente2';
+                    text-decoration: none;
+                    font-weight: bold;
+                    &:hover {
+                        color:black ;
+                    }
+                }
+                .formulario__mensaje-exito{
+                    @include encabezadoH5;
+                    color: $color_fondoCards;
+                    display: none;
+                    
+                }
+                .formulario__mensaje-exito-activo {
+                    display: block;
+                }
+
+            }
+
+            .formulario__grupo-correcto{
+                .formulario__grupo-input{ 
+                    .formulario__validacion-estado {
+                        color: greenyellow;
+                        opacity: 1;
+                    }
+                }
+                
+            } 
+
+            .formulario__grupo-incorrecto {
+                .formulario__label {
+                    color: $color_principal;
+                }
+                .formulario__grupo-input {
+                    .formulario__validacion-estado{
+                        color: $color_principal;
+                        opacity: 1;
+                    }
+                    .formulario__input {
+                        border: 3px solid $color_principal;
+                    }
+                }
+
+
+
             }
         }
     }
 }
 
 
-/*media query*/
+
+
+                  
+//                     .fieldset__datos {
+//                         label {
+//                             @include parrafo;
+//                             font-weight: bold;
+//                             margin-bottom: 2%;                          
+//                         }
+//                         input {
+//                             margin-bottom: 3%
+//                         }
+//                         textarea {
+//                             margin-bottom: 2%;
+//                         }
+                    
+//                     }
+//                     .fieldset__boton {
+//                         display: flex;
+//                         justify-content: space-around;
+//                         width: 68%;
+//                         .btnForm {
+//                             @include boton;
+//                             color: $color_fondoCards;
+//                             width: 40%;
+//                             border-radius: 4px;
+//                             &:hover {
+//                                 box-shadow: $color_principal 0px 3px 0px ;
+//                                 padding-top: 3px;
+//                             }
+//                         }
+                   
+ 
+
+// media query
 @media (max-width: 768px) {
     .contacto {
         .contacto__imagen {
@@ -99,7 +230,7 @@ body {
                 h3 {
                     font-size: 18px;
                     margin-bottom: 16px;
-                }
+                 }
                 p {
                     font-size: 12px;
                 }
@@ -116,25 +247,25 @@ body {
                 h4 {
                     font-size: 16px;  
                 }
-                form {
-                    fieldset {
-                        legend{
-                            font-size: 16px;
+                h5 {
+                    font-size: 16px;
+                }
+                .formulario {
+                    grid-template-columns:1fr;
+                    text-align: center;
+                    .formulario__grupo-terminos,
+                    .formulario__mensaje,
+                    .formulario__grupo-btn-enviar {
+                    grid-column: 1;
+                    }
+                    .formulario__grupo-btn-enviar {
+                        .formulario__btn {
+                            width: 90%;
                         }
-                        .fieldset__datos {
-                            textarea {
-                                width: 100%
-                            }
-                        }
-                        .fieldset__boton {
-                            width: 100%;
-                            .btnForm {
-                                width: 44%;
-                            }
-                        }
+
                     }
                 }
-            }
-        }   
-    }
+            }   
+        }
+    } 
 }
