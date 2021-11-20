@@ -911,7 +911,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 20; }
+  z-index: 200; }
   header .icon-menu {
     color: whitesmoke; }
   header .barramenu_links .submenu {
