@@ -848,6 +848,20 @@ body {
         opacity: 1; }
       .contacto .contacto__info_form .formulario .formulario__grupo-incorrecto .formulario__grupo-input .formulario__input {
         border: 3px solid #d72136; }
+    .contacto .contacto__info_form .descuentos {
+      margin-top: 5%; }
+      .contacto .contacto__info_form .descuentos li {
+        font-family: 'fuente3';
+        color: #d72136;
+        font-size: 20px;
+        font-family: 'fuente2'; }
+      .contacto .contacto__info_form .descuentos p {
+        font-family: 'fuente2';
+        color: whitesmoke;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.6;
+        margin-left: 5%; }
 
 @media (max-width: 768px) {
   .contacto .contacto__imagen {
@@ -930,16 +944,12 @@ header {
     color: #d72136; }
     header .barramenu_links a:hover {
       color: whitesmoke; }
-  header .ctm {
+  header #ctm {
     display: flex; }
-    header .ctm .user_registro_icon {
-      display: none; }
-      header .ctm .user_registro_icon span {
-        color: #d72136;
-        padding-right: 6px; }
-    header .ctm .user_registro_icon-registrado {
-      display: block; }
-    header .ctm .user_registro h2 {
+    header #ctm .user_registro_icon span {
+      color: #d72136;
+      padding-right: 6px; }
+    header #ctm .user_registro h2 {
       color: #d72136;
       font-family: 'fuente2';
       font-size: 18px;

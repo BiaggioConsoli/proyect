@@ -1,5 +1,9 @@
 
 $(document).ready(function(){
+    $("#ctm").hide();
+    $('#descuentos').hide();
+    
+    
     
     const inputs = document.querySelectorAll('#formulario input');
 
@@ -91,7 +95,6 @@ $(document).ready(function(){
     inputs.forEach((input) => {
         input.addEventListener('keyup', validarFormulario );
         input.addEventListener('blur', validarFormulario );
-
         });
 
 
@@ -123,18 +126,27 @@ $(document).ready(function(){
             localStorage.setItem("datosUsuario1", datosUsuario1JSON);
             const usuario1 = JSON.parse(datosUsuario1JSON);
             console.log(usuario1.user)
-            $('#formulario__mensaje-exito').addClass('formulario__mensaje-exito-activo');
-            setTimeout(() => {
-            $('#formulario__mensaje-exito').removeClass('formulario__mensaje-exito-activo'); 
-            }, 6000);
             $('.formulario__validacion-estado').hide();
             $('#boton__registro').addClass('boton_registro-registrado');
             $('#user_registro').append(`<h2> ${usuario1.user}</h2>`);
-            $('#user_registro_icon').addClass('user_registro_icon-registrado');
             $('#formulario__mensaje').removeClass('formulario__mensaje-activo');
+            $("#ctm").slideDown(4000);
+            $('#form').hide();
+            $('#descuentos').prepend(`<h5> ${usuario1.name}, disfruta de los beneficios que tenemos para ti</h5>`);
+            $('#descuentos').prepend(`<h4>El formulario fue enviado correctamente, gracias por registrarte</h4>`);
+            $.getJSON('promociones.json',(respuesta, estado) => {
+                if (estado === 'success') {
+                }
+                respuesta.forEach((descuento) => {
+                    $('.descuentos').append(
+                        `<li>${descuento.Disciplina}</li>
+                        <p>${descuento.desc}</p>`);
+                });
+            });
+            $('#descuentos').fadeIn(4000);   
         }else {
             $('#formulario__mensaje').addClass('formulario__mensaje-activo');
         }
-
     });
 });
+

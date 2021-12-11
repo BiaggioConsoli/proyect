@@ -1,0 +1,18 @@
+[    
+    {
+        "Disciplina":"Muaythai",
+        "desc": "20% de descuento en implementos"
+    },
+    {
+        "Disciplina":"Jiu Jitsu",
+        "desc": "10% de descuento  en membresias de tres meses"
+    },
+    {
+        "Disciplina":"Capoeira",
+        "desc": "20% de descuento en la segunda disciplina"
+    },
+    {
+        "Disciplina":"Combat Sambo",
+        "desc": "Free pass en nuestra sala de maquinas"
+    }
+]

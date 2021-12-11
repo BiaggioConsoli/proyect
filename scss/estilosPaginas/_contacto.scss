@@ -177,6 +177,19 @@ body {
 
             }
         }
+    .descuentos {
+        margin-top: 5%;
+        li {
+            @include encabezadoH4;
+            font-family: 'fuente2';
+            
+        }
+        p {
+            @include parrafo;
+            margin-left: 5%;
+
+        }
+    }
     }
 }
 
